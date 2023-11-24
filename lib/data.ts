@@ -66,6 +66,14 @@ export const experiencesData = [
     icon: React.createElement(CgWorkAlt),
     date: "2023 january - 2023 summer",
   },
+  {
+    title: "Freelance Fullstack - Orgone Jewels",
+    location: "Remote",
+    description:
+      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2023 august - 2023 november",
+  },
 ] as const;
 
 export const projectsData = [
@@ -94,7 +102,7 @@ export const projectsData = [
     title: "Udemy Course - FERN: Service + Live chat",
     description:
       "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Firebase Cloudstore", "Firebase, Realtime Database", "React-Bootstrap",],
+    tags: ["React", "React-Bootstrap", "Firebase Cloudstore & Realtime"],
     imageUrl: wordanalyticsImg,
   },
 ] as const;

@@ -2,14 +2,12 @@
 
 import React from "react";
 import SectionHeading from "./section-heading";
-import {
-  VerticalTimeline,
-  VerticalTimelineElement,
-} from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement, } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import { experiencesData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { useTheme } from "@/context/theme-context";
+import { IoLocationOutline } from "react-icons/io5";
 
 export default function Experience() {
   const { ref } = useSectionInView("Experience");
@@ -44,8 +42,8 @@ export default function Experience() {
                 fontSize: "1.5rem",
               }}
             >
-              <h3 className="font-semibold capitalize">{item.title}</h3>
-              <p className="font-normal !mt-0">{item.location}</p>
+              <h3 className="font-semibold capitalize text-[#00A9FF]">{item.title}</h3>
+              <p className="flex flex-wrap font-normal !mt-0 text-slate-600"><IoLocationOutline size={20} />{item.location}</p>
               <p className="!mt-1 !font-normal text-gray-700 dark:text-white/75">
                 {item.description}
               </p>

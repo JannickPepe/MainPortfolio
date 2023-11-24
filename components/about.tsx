@@ -4,9 +4,13 @@ import React from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import Link from "next/link";
+import { BsArrowRight } from "react-icons/bs";
+import { useActiveSectionContext } from "@/context/active-section-context";
 
 export default function About() {
   const { ref } = useSectionInView("About");
+  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <motion.section
@@ -43,6 +47,20 @@ export default function About() {
         <span className="font-medium">history and philosophy</span>. I'm also
         learning how to play the guitar.
       </p>
+
+      <Link
+          href="#contact"
+          className=" bg-gray-900 max-w-[400px] mx-auto text-white mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          onClick={() => {
+            setActiveSection("Contact");
+            setTimeOfLastClick(Date.now());
+          }}
+        >
+          <div className="mx-auto">
+            Contact me here{" "}
+            <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition inline-block" />
+          </div>
+        </Link>
     </motion.section>
   );
 }
