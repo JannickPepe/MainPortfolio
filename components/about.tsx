@@ -7,6 +7,8 @@ import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { useActiveSectionContext } from "@/context/active-section-context";
+import { IoAlertOutline } from "react-icons/io5";
+import { GiDiploma } from "react-icons/gi";
 
 export default function About() {
   const { ref } = useSectionInView("About");
@@ -22,30 +24,28 @@ export default function About() {
       id="about"
     >
       <SectionHeading>About me</SectionHeading>
-      <p className="mb-3">
-        After graduating with a Computer Science diploma and{" "}
-        <span className="font-medium">PBA degree in Web development and App</span>, I decided to be in internships and freelance in startup.
-        To futher gain more code understanding, I also took various courses{" "}
-        <span className="font-medium">full-stack web development</span>.{" "}
-        <span className="italic">My favorite part of programming</span> is the
-        problem-solving aspect. I <span className="underline">love</span> the
-        feeling of finally figuring out a solution to a problem. My core stack
-        is{" "}
-        <span className="font-medium">
-          React, Next.js, Node.js, Angular, Express, Firebase and MongoDB
-        </span>
-        . I am also familiar with TypeScript, React Query, Sanity and Prisma. I am always looking to
-        learn new technologies. I am currently looking for a{" "}
-        <span className="font-medium">full-time position</span> as a fullstack developer with good UI experince or software / App
+      <p className="mb-3 text-gray-500 dark:text-gray-400 font-medium">
+        <GiDiploma color="#228b22" size={30} className="inline-block mr-2"/>
+        After graduating with a Computer Science diploma and PBA degree in Web development and App, I decided to be in internships and freelance in startup. To futher gain more code understanding, I also took various courses full-stack web development.
       </p>
 
-      <p>
-        <span className="italic">When I'm not coding</span>, I enjoy playing
-        video games, watching movies, and playing with my dog. I also enjoy{" "}
-        <span className="font-medium">learning new things</span>. I am currently
-        learning about{" "}
-        <span className="font-medium">history and philosophy</span>. I'm also
-        learning how to play the guitar.
+      <div className="my-6 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="mb-3 text-gray-500 dark:text-gray-400">
+            <span className="text-2xl font-semibold block">My main stacks</span>
+            <hr className="mb-2 border-[#002244]"/>
+            My core stack is React, Next.js, Node.js, Angular, Express, Firebase and MongoDB. I am also familiar with TypeScript, React Query, Sanity and Prisma. I am always looking to learn new technologies.
+          </div>
+      
+          <div className="mb-3 text-gray-500 dark:text-gray-400">
+            <span className="text-2xl font-semibold block">What I enjoy the most</span>
+            <hr className="mb-2 border-[#002244]"/>
+            My favorite part of programming is the problem-solving aspect. I love the feeling of finally figuring out a solution to a problem.
+          </div>
+      </div>
+
+      <p className="mb-3 text-gray-500 dark:text-gray-400 font-medium">
+        <IoAlertOutline color="#B22222" size={30} className="inline-block" /> 
+        I am currently looking for a full-time position as a fullstack developer with good UI experince or software / App
       </p>
 
       <Link

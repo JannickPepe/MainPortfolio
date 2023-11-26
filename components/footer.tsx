@@ -12,7 +12,7 @@ export default function Footer() {
         <div className="relative inline-flex  group">
           <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
           </div>
-          <a title="Go to 3D Portfolio" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
+          <a href="https://jannickportfolio.netlify.app/" title="Go to 3D Portfolio" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
             3D Portfolio
             <BsArrowRight size={20} className="opacity-70 group-hover:translate-x-1 transition ml-2" />
           </a>
@@ -24,7 +24,7 @@ export default function Footer() {
           <div>
             <div>
               <Image src="https://i.ibb.co/xJmRm7h/jannickogkyle.jpg" width={50} height={50} className="rounded-full inline-block" alt="logo" />
-              <h3 className="inline-block text-2xl font-semibold px-2 dark:text-slate-700">Jannick Pedersen</h3>
+              <h3 className="inline-block text-2xl font-semibold px-3 dark:text-slate-700 box-decoration-slice bg-gradient-to-r from-indigo-600 to-[#44BCFF] text-white rounded-full ml-2">Jannick Pedersen</h3>
             </div>
             <p className="max-w-xs mt-4 text-sm text-gray-600">
               Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
