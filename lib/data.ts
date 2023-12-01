@@ -80,30 +80,34 @@ export const projectsData = [
   {
     title: "NanoScaleSimulations",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
+      "I worked as a full-stack developer on this startup project for 7 months. Started from designing a Figma Prototype, to build up the NodeJS and Express server and production, build responsive design. Then next step was to make curtain pages and sections dynamic with the data, so the product owners could manage the data by themselves. Email and subscribe also got setup along with data visulazation in the admin panel.",
     tags: ["React", "React-Bootstrap", "MongoDB", "Express", "Node", "Framer Motion"],
     imageUrl: corpcommentImg,
+    url_link: "https://nanoscale.up.railway.app/landing",
   },
   {
     title: "Orgone Jewels",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Prisma", "Stripe"],
+      "A NextJS13 fullstack project, where an e-shop needed to be devevloped after a product owners demand (so far). Where the CSS framework is TailwindCSS with the usage of React-Observer and Framer Motion, also creating the collections in Prisma. Stripe is set in test mode and works.",
+    tags: ["React.js", "TypeScript", "Next.js", "Tailwind", "Prisma", "Stripe"],
     imageUrl: rmtdevImg,
+    url_link: "https://next-js-13-e-shop.vercel.app/",
   },
   {
     title: "Udemy Course - Serverless Blog",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "Sanity", "Tailwind", "Vercel"],
+      "A serverless blog, where I use Sanity CMS to create blogs. It got light and dark mode and various filter options.",
+    tags: ["React.js", "Next.js", "Sanity", "CSS", "Vercel"],
     imageUrl: wordanalyticsImg,
+    url_link: "https://udemynextjsserverlessblog.vercel.app/",
   },
   {
     title: "Udemy Course - FERN: Service + Live chat",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
+      "An SPA service project, where you can create a user, then either enroll in classes or make classes. Where you can CRUD with title, desc, price ect. Also student can send class request and the teacher can accept and thereafter live chat together with another request it",
     tags: ["React", "React-Bootstrap", "Firebase Cloudstore & Realtime"],
     imageUrl: wordanalyticsImg,
+    url_link: "https://jannickservice.netlify.app/",
   },
 ] as const;
 

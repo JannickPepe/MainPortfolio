@@ -26,8 +26,12 @@ export default function Footer() {
               <Image src="https://i.ibb.co/xJmRm7h/jannickogkyle.jpg" width={50} height={50} className="rounded-full inline-block" alt="logo" />
               <h3 className="inline-block text-2xl font-semibold px-3 dark:text-slate-700 box-decoration-slice bg-gradient-to-r from-indigo-600 to-[#44BCFF] text-white rounded-full ml-2">Jannick Pedersen</h3>
             </div>
-            <p className="max-w-xs mt-4 text-sm text-gray-600">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas, accusantium.
+            <p className="max-w-md px-1 mt-4 text-sm text-gray-600">
+            Jeg er nyuddannet fra en PBA på Zealand i Roskilde. Hvor jeg har taget en profession bachelor indenfor web programmering og app.<br/> 
+            Udover det, har jeg også et diplom indenfor computer science.<br/>
+            Jeg har primært udført fullstack projekter i NoSQL databaser, samt benyttet WAMP server med MySQL.<br/>
+            Frontend har primært været ReactJS og NextJS, og sekundært Angular og PHP.
+            Hvori React-Bootstrap har været benyttet, TailwindCSS, MUI og Ionic5.
             </p>
             <div className="flex mt-8 space-x-6 text-gray-600">
               <a className="hover:opacity-75" target="_blank" rel="noreferrer">
@@ -62,51 +66,41 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-4">
-            <div>
-              <p className="font-medium dark:text-blue-700">
+          <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3 lg:ml-6">
+            <div className="">
+              <p className="font-medium dark:text-blue-700 text-2xl">
                 Sections
               </p>
-              <div className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75"> About </a>
-                <a className="hover:opacity-75"> Meet the Team </a>
-                <a className="hover:opacity-75"> History </a>
-                <a className="hover:opacity-75"> Careers </a>
+              <div className="flex flex-col mt-4 space-y-2 text-gray-500 hover:cursor-pointer text-lg">
+                <a href="#home" className="hover:opacity-75">Home</a>
+                <a href="#about" className="hover:opacity-75">About</a>
+                <a href="#projects" className="hover:opacity-75">Projects</a>
+                <a href="#skills" className="hover:opacity-75">Skills</a>
+                <a href="#experience" className="hover:opacity-75">Experience</a>
               </div>
             </div>
             <div>
-              <p className="font-medium dark:text-blue-700">
+              <p className="font-medium dark:text-blue-700 text-2xl">
                 Projects
               </p>
-              <div className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75"> 1on1 Coaching </a>
-                <a className="hover:opacity-75"> Company Review </a>
-                <a className="hover:opacity-75"> Accounts Review </a>
-                <a className="hover:opacity-75"> HR Consulting </a>
-                <a className="hover:opacity-75"> SEO Optimisation </a>
+              <div className="flex flex-col mt-4 space-y-2 text-lg text-gray-500">
+                <a href="https://nanoscale.up.railway.app/landing" className="hover:opacity-75">NanoScaleSimulations </a>
+                <a href="https://next-js-13-e-shop.vercel.app/" className="hover:opacity-75">Orgone Jewels</a>
+                <a href="https://udemynextjsserverlessblog.vercel.app/" className="hover:opacity-75">Serverless blog</a>
+                <a href="https://jannickservice.netlify.app/" className="hover:opacity-75">SPA Service</a>
               </div>
             </div>
             <div>
-              <p className="font-medium dark:text-blue-700">
+              <p className="font-medium dark:text-blue-700 hover:cursor-pointer text-2xl">
                 Helpful Links
               </p>
-              <div className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75"> Contact </a>
-                <a className="hover:opacity-75"> FAQs </a>
-                <a className="hover:opacity-75"> Live Chat </a>
+              <div className="flex flex-col mt-4 space-y-2 text-gray-500 text-lg">
+                <a href="#contact" className="hover:opacity-75">Contact</a>
+                <a className="hover:opacity-75">FAQs</a>
+                <a className="hover:opacity-75">jannickpedersen@live.dk</a>
               </div>
             </div>
-            <div>
-              <p className="font-medium dark:text-blue-700">
-                Legal
-              </p>
-              <div className="flex flex-col mt-4 space-y-2 text-sm text-gray-500">
-                <a className="hover:opacity-75"> Privacy Policy </a>
-                <a className="hover:opacity-75"> Terms &amp; Conditions </a>
-                <a className="hover:opacity-75"> Returns Policy </a>
-                <a className="hover:opacity-75"> Accessibility </a>
-              </div>
-            </div>
+          
           </div>
         </div>
         <p className="mt-8 text-xs text-gray-800">
