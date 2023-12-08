@@ -1,10 +1,11 @@
 import React from "react";
 import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
-import corpcommentImg from "@/public/corpcomment.png";
-import rmtdevImg from "@/public/rmtdev.png";
-import wordanalyticsImg from "@/public/wordanalytics.png";
+import nanoImg from "@/public/nano.png";
+import orgoneImg from "@/public/orgone.png";
+import serviceImg from "@/public/service.png";
+import serverlessblogImg from "@/public/serverlessblog.png";
+
 
 export const links = [
   {
@@ -51,6 +52,14 @@ export const experiencesData = [
     date: "2019 januray - 2021 summer",
   },
   {
+    title: "Trekroner Housing-Union Internship",
+    location: "Roskilde, Denmark",
+    description:
+      "I was working as an intern for the last semeter of my computer science. Where i was going to build a Wordpress site for Trekroner Housing-Union. With booking system, calendar system and event overview. As well for contact form and responsive design. Using Elementor, classic editor for custom coding and more.",
+    icon: React.createElement(CgWorkAlt),
+    date: "2021, January-May",
+  },
+  {
     title: "Proffesional Bachelor in Fullstack (Web) & App",
     location: "Roskide, Denmark",
     description:
@@ -80,17 +89,17 @@ export const projectsData = [
   {
     title: "NanoScaleSimulations",
     description:
-      "I worked as a full-stack developer on this startup project for 7 months. Started from designing a Figma Prototype, to build up the NodeJS and Express server and production, build responsive design. Then next step was to make curtain pages and sections dynamic with the data, so the product owners could manage the data by themselves. Email and subscribe also got setup along with data visulazation in the admin panel.",
+      "I worked as a full-stack developer on this startup project for 7 months. Started from designing a Figma Prototype, to build up the NodeJS and Express server with client. Next step was to make sure every page is responsive and setup analytics with GA4 and PostHog, along with EmailJS. Having visualize data as well in the admin panel.",
     tags: ["React", "React-Bootstrap", "MongoDB", "Express", "Node", "Framer Motion"],
-    imageUrl: corpcommentImg,
-    url_link: "https://nanoscale.up.railway.app/landing",
+    imageUrl: nanoImg,
+    url_link: "https://nanoscalesimulations.com",
   },
   {
     title: "Orgone Jewels",
     description:
       "A NextJS13 fullstack project, where an e-shop needed to be devevloped after a product owners demand (so far). Where the CSS framework is TailwindCSS with the usage of React-Observer and Framer Motion, also creating the collections in Prisma. Stripe is set in test mode and works.",
     tags: ["React.js", "TypeScript", "Next.js", "Tailwind", "Prisma", "Stripe"],
-    imageUrl: rmtdevImg,
+    imageUrl: orgoneImg,
     url_link: "https://next-js-13-e-shop.vercel.app/",
   },
   {
@@ -98,7 +107,7 @@ export const projectsData = [
     description:
       "A serverless blog, where I use Sanity CMS to create blogs. It got light and dark mode and various filter options.",
     tags: ["React.js", "Next.js", "Sanity", "CSS", "Vercel"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: serverlessblogImg,
     url_link: "https://udemynextjsserverlessblog.vercel.app/",
   },
   {
@@ -106,7 +115,7 @@ export const projectsData = [
     description:
       "An SPA service project, where you can create a user, then either enroll in classes or make classes. Where you can CRUD with title, desc, price ect. Also student can send class request and the teacher can accept and thereafter live chat together with another request it",
     tags: ["React", "React-Bootstrap", "Firebase Cloudstore & Realtime"],
-    imageUrl: wordanalyticsImg,
+    imageUrl: serviceImg,
     url_link: "https://jannickservice.netlify.app/",
   },
 ] as const;
@@ -125,7 +134,7 @@ export const skillsData = [
   "MongoDB",
   "Redux",
   "Express",
-  "PostgreSQL",
+  "Analytics",
   "Figma",
   "Angular",
   "Framer Motion",
