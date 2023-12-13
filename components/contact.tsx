@@ -1,15 +1,36 @@
+
 "use client";
 
-import React from "react";
+import React, { useState } from "react";
 import SectionHeading from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import { sendEmail } from "@/actions/sendEmail";
-import SubmitBtn from "./submit-btn";
-import toast from "react-hot-toast";
+import sendEmail from "../email/sendEmail";
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 export default function Contact() {
+
   const { ref } = useSectionInView("Contact");
+
+  const [formData, setFormData] = useState({
+    name: '',
+    email: '',
+    message: ''
+  });
+
+  const handleChange = (event: any) => {
+      setFormData({ ...formData, [event.target.name]: event.target.value });
+  };
+
+  const submitHandler = (e: any) => {
+      e.preventDefault();
+      sendEmail(formData);
+      setFormData({ name: '', email: '', message: '' });
+  };
+
+  const notify = () => toast.success("Message was send!");
 
   return (
     <motion.section
@@ -30,6 +51,18 @@ export default function Contact() {
       }}
     >
       <SectionHeading>Contact me</SectionHeading>
+      <ToastContainer
+        position="top-center"
+        autoClose={5000}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="light" 
+      />
 
       <p className="text-gray-700 -mt-6 dark:text-white/80">
         Please contact me directly at{" "}
@@ -39,36 +72,72 @@ export default function Contact() {
         or through this form.
       </p>
 
-      <form
-        className="mt-10 flex flex-col dark:text-black"
-        action={async (formData) => {
-          const { data, error } = await sendEmail(formData);
+      <form onSubmit={submitHandler} className="mt-8">
+        <div className="mb-1 sm:mb-2">
 
-          if (error) {
-            toast.error(error);
-            return;
-          }
+          <label htmlFor="firstName" className="mb-1 font-medium flex justify-start" >
+            Full Name
+          </label>
 
-          toast.success("Email sent successfully!");
-        }}
-      >
-        <input
-          className="h-14 px-4 rounded-lg borderBlack dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="senderEmail"
-          type="email"
-          required
-          maxLength={500}
-          placeholder="Your email"
-        />
-        <textarea
-          className="h-52 my-3 rounded-lg borderBlack p-4 dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
-          name="message"
-          placeholder="Your message"
-          required
-          maxLength={5000}
-        />
-        <SubmitBtn />
+          <input
+            placeholder="John Doe"
+            required
+            type="text"
+            className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+            id="firstName"
+            name="name" 
+            value={formData.name} 
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="mb-1 sm:mb-2">
+          <label htmlFor="email" className="mb-1 font-medium flex justify-start" >
+            E-mail
+          </label>
+
+          <input
+            placeholder="johndoe@example.org"
+            required
+            type="text"
+            className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+            id="email"
+            name="email" 
+            value={formData.email} 
+            onChange={handleChange}
+          />
+        </div>
+
+        <div className="mb-1 sm:mb-2">
+          <label htmlFor="email" className="mb-1 font-medium flex justify-start" >
+            Message
+          </label>
+
+          <textarea 
+            className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" 
+            rows={5} 
+            name="message" 
+            value={formData.message} 
+            onChange={handleChange} 
+            placeholder="Message" 
+            required 
+          />
+        </div>
+
+        <div className="mt-4 mb-2 sm:mb-4">
+          <button
+            onClick={notify}
+            type="submit"
+            className="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none hover:text-slate-600"
+          >
+            Submit
+          </button>
+        </div>
+
       </form>
+
     </motion.section>
+
   );
-}
+
+};
