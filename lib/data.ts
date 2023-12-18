@@ -29,6 +29,10 @@ export const links = [
     hash: "#experience",
   },
   {
+    name: "Reviews",
+    hash: "#reviews"
+  },
+  {
     name: "Contact",
     hash: "#contact",
   },
@@ -119,6 +123,7 @@ export const projectsData = [
     url_link: "https://jannickservice.netlify.app/",
   },
 ] as const;
+
 
 export const skillsData = [
   "HTML",

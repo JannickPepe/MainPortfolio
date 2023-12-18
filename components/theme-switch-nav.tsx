@@ -9,10 +9,10 @@ export default function ThemeSwitchNav() {
 
   return (
     <button
-      className="fixed bottom-[-1px] right-[-70px] bg-white w-[3rem] h-[3rem] border border-white border-opacity-40 rounded-full flex items-center justify-center hover:scale-[1.15] active:scale-105 transition-all dark:bg-gray-950"
+      className="fixed bottom-[-1px] right-[-70px] bg-sky-600 w-[3rem] h-[3rem] rounded-full flex items-center justify-center hover:scale-[1.1] active:scale-105 transition-all dark:bg-gray-950 hover:text-black hover:bg-slate-300 dark:hover:text-white"
       onClick={toggleTheme}
     >
-      {theme === "light" ? <BsSun /> : <BsMoon />}
+      {theme === "light" ? <BsSun size={20}/> : <BsMoon size={20} />}
     </button>
   );
 }

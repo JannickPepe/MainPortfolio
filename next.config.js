@@ -9,7 +9,11 @@ const nextConfig = {
       {
         protocol: "https",
         hostname: "i.ibb.co", 
-      }
+      },
+      {
+        protocol: "https",
+        hostname: "i.imgur.com",
+      },
     ],
   },
   experimental: {
