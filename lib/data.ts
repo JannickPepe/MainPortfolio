@@ -5,6 +5,12 @@ import nanoImg from "@/public/nano.png";
 import orgoneImg from "@/public/orgone.png";
 import serviceImg from "@/public/service.png";
 import serverlessblogImg from "@/public/serverlessblog.png";
+import thirdcard from "@/public/service.png";
+import firstcard from "@/public/nano.png";
+import secondcard from "@/public/orgone.png";
+import zan from "@/public/zan.jpg";
+import kellie from "@/public/kellie.jpg";
+import avatar from "@/public/avatar.png";
 
 
 export const links = [
@@ -37,6 +43,7 @@ export const links = [
     hash: "#contact",
   },
 ] as const;
+
 
 export const experiencesData = [
   {
@@ -145,4 +152,30 @@ export const skillsData = [
   "Framer Motion",
   "PHP",
   "C# / ASP.NET"
+] as const;
+
+
+export const reviewsData = [
+  {
+    imageCover: firstcard,
+    imageProfile: zan,
+    name: 'Zan Mahmoud',
+    position: 'CEO: NanoScaleSimulations',
+    text: 'Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.'
+  },
+  {
+    imageCover: secondcard,
+    imageProfile: kellie,
+    name: 'Kellie Fisher',
+    position: 'CEO: Orgone Jewels',
+    text: 'Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.'
+  },
+  {
+    imageCover: thirdcard,
+    imageProfile: avatar,
+    name: 'Per Jensen',
+    position: 'CEO: GF-Trekroner',
+    text: 'Perfect for learning how the framework works, prototyping a new idea, or creating a demo to share online.'
+  },
+  
 ] as const;

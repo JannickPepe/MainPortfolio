@@ -57,9 +57,13 @@ export default function Header() {
                   ></motion.span>
                 )}
               </Link>
-              <div className="bg-sky-600 rounded-full absolute inset-0 -z-10 dark:bg-gray-800">
-                <ThemeSwitchNav />
-              </div>
+              
+                <div className="bg-sky-600 rounded-full absolute inset-0 -z-10 dark:bg-gray-800">
+                  {/* 
+                    <ThemeSwitchNav />
+                  */}
+                </div>
+
             </motion.li>
           ))}
         </ul>

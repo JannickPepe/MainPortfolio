@@ -18,3 +18,14 @@ html.dark {
   background: rgb(81,156,212);
   background: linear-gradient(90deg, rgba(81,156,212,1) 55%, rgba(111,90,193,1) 60%);
 }
+
+.quote-icon{
+  
+}
+
+
+@media only screen and (max-width: 540px) { 
+  .quote-icon{
+    left:20px;
+  }
+}

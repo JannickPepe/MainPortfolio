@@ -34,9 +34,7 @@ export default function Contact() {
 
   return (
     <motion.section
-      id="contact"
-      ref={ref}
-      className="mb-20 sm:mb-28 w-[min(100%,38rem)] text-center"
+      className="w-[min(100%,38rem)] text-center"
       initial={{
         opacity: 0,
       }}
@@ -50,91 +48,93 @@ export default function Contact() {
         once: true,
       }}
     >
-      <SectionHeading>Contact me</SectionHeading>
-      <ToastContainer
-        position="top-center"
-        autoClose={5000}
-        hideProgressBar={false}
-        newestOnTop={false}
-        closeOnClick
-        rtl={false}
-        pauseOnFocusLoss
-        draggable
-        pauseOnHover
-        theme="light" 
-      />
+      <section id="contact" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+        <SectionHeading>Contact me</SectionHeading>
+        <ToastContainer
+          position="top-center"
+          autoClose={5000}
+          hideProgressBar={false}
+          newestOnTop={false}
+          closeOnClick
+          rtl={false}
+          pauseOnFocusLoss
+          draggable
+          pauseOnHover
+          theme="light" 
+        />
 
-      <p className="text-gray-700 -mt-6 dark:text-white/80">
-        Please contact me directly at{" "}
-        <a className="underline" href="mailto:jannickpedersen@live.dk">
-          jannickpedersen@live.dk
-        </a>{" "}
-        or through this form.
-      </p>
+        <p className="text-gray-700 -mt-6 dark:text-white/80">
+          Please contact me directly at{" "}
+          <a className="underline" href="mailto:jannickpedersen@live.dk">
+            jannickpedersen@live.dk
+          </a>{" "}
+          or through this form.
+        </p>
 
-      <form onSubmit={submitHandler} className="mt-8">
-        <div className="mb-1 sm:mb-2">
+        <form onSubmit={submitHandler} className="mt-8" autoComplete='id'>
+          <div className="mb-1 sm:mb-2">
 
-          <label htmlFor="firstName" className="mb-1 font-medium flex justify-start" >
-            Full Name
-          </label>
+            <label htmlFor="firstName" className="mb-1 font-medium flex justify-start" >
+              Full Name
+            </label>
 
-          <input
-            placeholder="John Doe"
-            required
-            type="text"
-            className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-            id="firstName"
-            name="name" 
-            value={formData.name} 
-            onChange={handleChange}
-          />
-        </div>
+            <input
+              placeholder="John Doe"
+              required
+              type="text"
+              className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+              id="firstName"
+              name="name" 
+              value={formData.name} 
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="mb-1 sm:mb-2">
-          <label htmlFor="email" className="mb-1 font-medium flex justify-start" >
-            E-mail
-          </label>
+          <div className="mb-1 sm:mb-2">
+            <label htmlFor="email" className="mb-1 font-medium flex justify-start" >
+              E-mail
+            </label>
 
-          <input
-            placeholder="johndoe@example.org"
-            required
-            type="text"
-            className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
-            id="email"
-            name="email" 
-            value={formData.email} 
-            onChange={handleChange}
-          />
-        </div>
+            <input
+              placeholder="johndoe@example.org"
+              required
+              type="text"
+              className="flex-grow w-full h-12 px-4 mb-2 transition duration-200 bg-white border border-gray-300 rounded shadow-sm appearance-none focus:border-deep-purple-accent-400 focus:outline-none focus:shadow-outline"
+              id="email"
+              name="email" 
+              value={formData.email} 
+              onChange={handleChange}
+            />
+          </div>
 
-        <div className="mb-1 sm:mb-2">
-          <label htmlFor="email" className="mb-1 font-medium flex justify-start" >
-            Message
-          </label>
+          <div className="mb-1 sm:mb-2">
+            <label htmlFor="email" className="mb-1 font-medium flex justify-start" >
+              Message
+            </label>
 
-          <textarea 
-            className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" 
-            rows={5} 
-            name="message" 
-            value={formData.message} 
-            onChange={handleChange} 
-            placeholder="Message" 
-            required 
-          />
-        </div>
+            <textarea 
+              className="mb-2 w-full rounded-md border border-gray-400 py-2 pl-2 pr-4 shadow-md dark:text-gray-300 sm:mb-0" 
+              rows={5} 
+              name="message" 
+              value={formData.message} 
+              onChange={handleChange} 
+              placeholder="Message" 
+              required 
+            />
+          </div>
 
-        <div className="mt-4 mb-2 sm:mb-4">
-          <button
-            onClick={notify}
-            type="submit"
-            className="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none hover:text-slate-600"
-          >
-            Submit
-          </button>
-        </div>
+          <div className="mt-4 mb-2 sm:mb-4">
+            <button
+              onClick={notify}
+              type="submit"
+              className="inline-flex items-center justify-center w-full h-12 px-6 font-semibold tracking-wide text-white transition duration-200 rounded shadow-md bg-sky-500 hover:bg-deep-purple-accent-700 focus:shadow-outline focus:outline-none hover:text-slate-600"
+            >
+              Submit
+            </button>
+          </div>
 
-      </form>
+        </form>
+      </section>
 
     </motion.section>
 
