@@ -64,9 +64,11 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Jannick Pedersen,</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">4 years</span> of experience.<br/> I enjoy
-        <span className="italic">developing sites & apps with greatly focus on UI and usage of analytic tools</span>.<br/> My focus is{" "}
+        <span className="font-bold">4 years</span> of experience.<br/> Graduated with a PBA from Roskilde Zealand.
+        <span className="italic"> I develop sites & apps with greatly focus on UI and analytics </span>.<br/> My focus is:{" "}
         <span className="underline">React (Next.js), Angular, NoSQL, SQL and CSS frameworks</span>.
+        Other skills is:{" "}
+        <span className="underline">C# (ASP.Net) and PHP</span>.
       </motion.h1>
 
       <motion.div

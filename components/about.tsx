@@ -10,6 +10,8 @@ import { BsArrowRight } from "react-icons/bs";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { IoAlertOutline } from "react-icons/io5";
 import { GiDiploma } from "react-icons/gi";
+import Image from "next/image";
+import PBA from "@/public/PBA.png";
 
 
 export default function About() {
@@ -54,6 +56,10 @@ export default function About() {
             <GiDiploma color="#228b22" size={30} className="inline-block mr-2"/>
             After graduating with a Computer Science diploma and PBA degree in Web development and App, I decided to be in internships and freelance in startup. To futher gain more code understanding, I also took various courses full-stack web development.
           </p>
+        
+          <div className="relative overflow-hidden bg-cover bg-no-repeat max-w-sm mx-auto rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800">
+            <Image src={PBA} alt="jannick PBA diploma" className="transition duration-300 ease-in-out hover:scale-125" />
+          </div>
 
           <div className="my-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
               <div className="mb-3 text-gray-500 dark:text-gray-400">

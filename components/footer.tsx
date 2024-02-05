@@ -27,11 +27,10 @@ export default function Footer() {
               <h3 className="inline-block text-2xl font-semibold px-3 dark:text-slate-700 box-decoration-slice bg-gradient-to-r from-indigo-600 to-[#44BCFF] text-white rounded-full ml-2">Jannick Pedersen</h3>
             </div>
             <p className="max-w-md px-1 mt-4 text-sm text-gray-600">
-            Jeg er nyuddannet fra en PBA på Zealand i Roskilde. Hvor jeg har taget en profession bachelor indenfor web programmering og app.<br/> 
-            Udover det, har jeg også et diplom indenfor computer science.<br/>
-            Jeg har primært udført fullstack projekter i NoSQL databaser, samt benyttet WAMP server med MySQL.<br/>
-            Frontend har primært været ReactJS og NextJS, og sekundært Angular og PHP.
-            Hvori React-Bootstrap har været benyttet, TailwindCSS, MUI og Ionic5.
+            In 2023 summer i graduated from Roskilde Zealand with a Proffesional Bachelor in the area of fullstack programming and app, I have also a Compuer Science diploma from Roksile Zealand<br/>
+            I have mainly done fullstack projects for the past 4 years in ReactJS, NextJS and Angular, where before it was PHP and C#/ASP.net<br/>
+            It has both been SQL and NoSQL, depends on the project 
+            Various CSS frameworks experience such as, React-Bootstrap, Bootstrap, Tailwind and Ionic5, but also ShadCN for UI components.
             </p>
             <div className="flex mt-8 space-x-6 text-gray-600">
               <a className="hover:opacity-75" target="_blank" rel="noreferrer">
@@ -74,6 +73,8 @@ export default function Footer() {
               <div className="flex flex-col mt-4 space-y-2 text-lg text-gray-500">
                 <a href="https://nanoscale.up.railway.app/landing" className="hover:opacity-75">NanoScaleSimulations </a>
                 <a href="https://next-js-13-e-shop.vercel.app/" className="hover:opacity-75">Orgone Jewels</a>
+                <a href="https://jannick-hotel.vercel.app/" className="hover:opacity-75">Hotel Booking</a>
+                <a href="https://tmsworld.vercel.app/" className="hover:opacity-75">Tell Me a Story</a>
                 <a href="https://udemynextjsserverlessblog.vercel.app/" className="hover:opacity-75">Serverless blog</a>
                 <a href="https://jannickservice.netlify.app/" className="hover:opacity-75">SPA Service</a>
               </div>

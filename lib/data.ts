@@ -11,6 +11,8 @@ import secondcard from "@/public/orgone.png";
 import zan from "@/public/zan.jpg";
 import kellie from "@/public/kellie.jpg";
 import avatar from "@/public/avatar.png";
+import linkedinHotel from "@/public/linkedin-hotel.png";
+import linkedinTMS from "@/public/linkedin-tms.png";
 
 
 export const links = [
@@ -98,6 +100,14 @@ export const experiencesData = [
 
 export const projectsData = [
   {
+    title: "Hotel Booking",
+    description:
+      "A FullStack Hotel Booking Web App in Next.js 14, React, Typescript, Shadcn, Clerk, My SQL (planetscale), Zustand, Stripe. You can create a user with Clerk if you want to 'rent' a room or add your own hotel and rooms. The date picker cannot overlap a current booked room and the filter list can only show states / ciites if there is any in the selected country. ",
+    tags: ["Next.js", "TailwindCSS", "PlanetScale", "Stripe", "Zustand", "Prisma"],
+    imageUrl: linkedinHotel,
+    url_link: "https://jannick-hotel.vercel.app/",
+  },
+  {
     title: "NanoScaleSimulations",
     description:
       "I worked as a full-stack developer on this startup project for 7 months. Started from designing a Figma Prototype, to build up the NodeJS and Express server with client. Next step was to make sure every page is responsive and setup analytics with GA4 and PostHog, along with EmailJS. Having visualize data as well in the admin panel.",
@@ -112,6 +122,14 @@ export const projectsData = [
     tags: ["React.js", "TypeScript", "Next.js", "Tailwind", "Prisma", "Stripe"],
     imageUrl: orgoneImg,
     url_link: "https://next-js-13-e-shop.vercel.app/",
+  },
+  {
+    title: "Tell Me a Story",
+    description:
+      "A FullStack MERN NextJS14 Threads App with React, Next JS, TypeScript, MongoDB with usage of ShadCN UI with CSS framework Tailwind. It has also server side rendering and MongoDB handling with schemas. Multiple data population, responsive layouts with TailwindCSS, Clerk for authentication, handle file uploads with UploadThing, validate data with Zod and manage forms with react hook form",
+    tags: ["ShadCN", "Next.js", "Typescript", "Clerk", "Zod Validation"],
+    imageUrl: linkedinTMS,
+    url_link: "https://tmsworld.vercel.app/",
   },
   {
     title: "Udemy Course - Serverless Blog",
