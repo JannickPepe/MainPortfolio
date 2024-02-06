@@ -12,7 +12,9 @@ import { IoAlertOutline } from "react-icons/io5";
 import { GiDiploma } from "react-icons/gi";
 import Image from "next/image";
 import PBA from "@/public/PBA.png";
-
+import Content from "./readMore";
+import ShowMore from "./FlyoutLink";
+import ShowMoreTwo from "./FlyoutLinkTwo";
 
 export default function About() {
 
@@ -52,37 +54,29 @@ export default function About() {
       >
         <section id="about" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
           <SectionHeading>About me</SectionHeading>
-          <p className="mb-3 text-gray-500 dark:text-gray-400 font-medium">
+          <p className=" text-gray-500 dark:text-gray-400 font-medium">
             <GiDiploma color="#228b22" size={30} className="inline-block mr-2"/>
-            After graduating with a Computer Science diploma and PBA degree in Web development and App, I decided to be in internships and freelance in startup. To futher gain more code understanding, I also took various courses full-stack web development.
+            Jannick Pedersen here, I am a 32 year old fulltime parent and I got finsihed my education summer 2023.
+            I have been knowing coding for 7 years of my life now, mainly under education.<br/> In-between my computer science and PBA, I had some time where I took various courses. 
           </p>
-        
-          <div className="relative overflow-hidden bg-cover bg-no-repeat max-w-sm mx-auto rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800">
+          <Content />
+          <div className="mt-4 relative overflow-hidden bg-cover bg-no-repeat max-w-sm mx-auto rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800">
             <Image src={PBA} alt="jannick PBA diploma" className="transition duration-300 ease-in-out hover:scale-125" />
           </div>
 
           <div className="my-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
-              <div className="mb-3 text-gray-500 dark:text-gray-400">
-                <span className="text-2xl font-semibold block">My main stacks</span>
-                <hr className="mb-2 border-[#002244]"/>
-                My core stack is React, Next.js, Node.js, Angular, Express, Firebase and MongoDB. I am also familiar with TypeScript, React Query, Sanity and Prisma. I am always looking to learn new technologies.
-              </div>
-          
-              <div className="mb-3 text-gray-500 dark:text-gray-400">
-                <span className="text-2xl font-semibold block">What I enjoy the most</span>
-                <hr className="mb-2 border-[#002244]"/>
-                My favorite part of programming is the problem-solving aspect. I love the feeling of finally figuring out a solution to a problem.
-              </div>
+            <ShowMore />
+            <ShowMoreTwo />
           </div>
 
-          <p className="mb-3 text-gray-500 dark:text-gray-400 font-medium">
+          <p className="mb-3 text-base text-gray-500 dark:text-gray-400 font-medium">
             <IoAlertOutline color="#B22222" size={30} className="inline-block" /> 
-            I am currently looking for a full-time position as a fullstack developer with good UI experince or software / App
+            I am currently looking for a full-time position as a fullstack developer with good UI experince or Software / App
           </p>
-
+          
           <Link
             href="#contact"
-            className=" bg-gray-900 max-w-[400px] mx-auto text-white mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className=" bg-gray-900 dark:bg-purple-800 max-w-[400px] mx-auto text-white mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -90,7 +84,7 @@ export default function About() {
           >
             <div className="mx-auto">
               Contact me here{" "}
-              <BsArrowRight className="opacity-70 group-hover:translate-x-1 transition inline-block" />
+              <BsArrowRight className="group-hover:translate-x-1 transition inline-block" />
             </div>
           </Link>
         </section>
