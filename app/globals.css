@@ -23,6 +23,12 @@ html.dark {
   
 }
 
+.animate-waving-hand{
+-webkit-animation-iteration-count: 10;
+  animation-iteration-count: 10;
+}
+
+
 
 @media only screen and (max-width: 540px) { 
   .quote-icon{

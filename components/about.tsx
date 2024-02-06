@@ -15,6 +15,7 @@ import PBA from "@/public/PBA.png";
 import Content from "./readMore";
 import ShowMore from "./FlyoutLink";
 import ShowMoreTwo from "./FlyoutLinkTwo";
+import { Reveal } from "./Reveal";
 
 export default function About() {
 
@@ -69,7 +70,7 @@ export default function About() {
             <ShowMoreTwo />
           </div>
 
-          <p className="mb-3 text-base text-gray-500 dark:text-gray-400 font-medium">
+          <p className="mb-3 mt-2 text-lg text-gray-500 dark:text-gray-400 font-medium">
             <IoAlertOutline color="#B22222" size={30} className="inline-block" /> 
             I am currently looking for a full-time position as a fullstack developer with good UI experince or Software / App
           </p>
