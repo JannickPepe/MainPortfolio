@@ -15,7 +15,7 @@ import PBA from "@/public/PBA.png";
 import Content from "./readMore";
 import ShowMore from "./FlyoutLink";
 import ShowMoreTwo from "./FlyoutLinkTwo";
-import { Reveal } from "./Reveal";
+
 
 export default function About() {
 
