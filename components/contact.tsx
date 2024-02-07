@@ -135,7 +135,7 @@ export default function Contact() {
 
         </form>
       </section>
-
+    
     </motion.section>
 
   );

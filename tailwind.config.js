@@ -35,6 +35,7 @@ module.exports = {
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
         'waving-hand': 'wave 2s ease-in-out 5',
+        'hover-waving-hand': 'wave 2s linear infinite',
         'infinite-scroll': 'infinite-scroll 6s linear infinite',
       },
     },

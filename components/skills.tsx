@@ -37,11 +37,11 @@ export default function Skills() {
               before:absolute before:w-1/2 before:pb-[100%] 
               before:bg-[linear-gradient(90deg,_theme(colors.indigo.500/0)_0%,_theme(colors.indigo.500)_35%,_theme(colors.indigo.200)_50%,_theme(colors.indigo.500)_65%,_theme(colors.indigo.500/0)_100%)] before:animate-[spin_3s_linear_infinite]">
                 <span className="relative whitespace-nowrap">
-                  <span className="block px-8 py-6 rounded-full bg-gradient-to-r from-slate-200 to-slate-100 z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
-                    <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800">
+                  <span className="block px-8 py-6 rounded-full bg-gradient-to-r from-slate-200 to-sky-400 z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
+                    <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 md:mt-8 lg:mt-10">
                       {skillsData.map((skill, index) => (
                         <motion.li
-                          className="bg-white borderBlack rounded-xl px-2 py-2 dark:bg-white/10 dark:text-white/80"
+                          className="bg-white borderBlack rounded-xl px-2 py-2 dark:bg-white dark:text-slate-700"
                           key={index}
                           variants={fadeInAnimationVariants}
                           initial="initial"
