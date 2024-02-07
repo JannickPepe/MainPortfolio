@@ -65,25 +65,25 @@ export default function About() {
             <Image src={PBA} alt="jannick PBA diploma" className="transition duration-300 ease-in-out hover:scale-125" />
           </div>
 
-          <div className="my-10 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
             <ShowMore />
             <ShowMoreTwo />
           </div>
 
-          <p className="mb-3 mt-2 text-lg text-gray-500 dark:text-gray-400 font-medium">
+          <p className="text-lg text-gray-500 dark:text-gray-400 font-medium">
             <IoAlertOutline color="#B22222" size={30} className="inline-block" /> 
             I am currently looking for a full-time position as a fullstack developer with good UI experince or Software / App
           </p>
-          
+
           <Link
             href="#contact"
-            className=" bg-gray-900 dark:bg-purple-800 max-w-[400px] mx-auto text-white mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            className="hover:animate-wiggle bg-[rgb(81,156,212)] hover:bg-orange-400 dark:bg-gradient-to-b from-indigo-500 to-purple-800 hover:dark:bg-purple-900 max-w-[400px] mx-auto text-white mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
             }}
           >
-            <div className="mx-auto">
+            <div className="mx-auto focus:scale-110 hover:scale-110">
               Contact me here{" "}
               <BsArrowRight className="group-hover:translate-x-1 transition inline-block" />
             </div>

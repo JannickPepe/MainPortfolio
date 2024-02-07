@@ -23,9 +23,19 @@ module.exports = {
           '60%': { transform: 'rotate(0.0deg)' },
           '100%': { transform: 'rotate(0.0deg)' },
         },
+        wiggle: {
+          '0%, 100%': { transform: 'rotate(-3deg)' },
+          '50%': { transform: 'rotate(3deg)' },
+        },
+        'infinite-scroll': {
+          from: { transform: 'translateX(0)' },
+          to: { transform: 'translateX(-100%)' },
+        },
       },
       animation: {
+        wiggle: 'wiggle 1s ease-in-out infinite',
         'waving-hand': 'wave 2s ease-in-out 5',
+        'infinite-scroll': 'infinite-scroll 6s linear infinite',
       },
     },
   },

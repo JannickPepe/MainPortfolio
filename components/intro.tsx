@@ -64,9 +64,24 @@ export default function Intro() {
       >
         <span className="font-bold">Hello, I'm Jannick Pedersen,</span> I'm a{" "}
         <span className="font-bold">full-stack developer</span> with{" "}
-        <span className="font-bold">4 years</span> of experience.<br/> Graduated with a PBA from Roskilde Zealand.
-        <span className="italic"> I develop sites & apps with greatly focus on UI and analytics </span>.<br/> Lately: {" "}
-        <span className="underline">React (Next.js), Angular, NoSQL, SQL and CSS frameworks</span>.
+        <span className="font-bold">4 years</span> of experience.{" "}
+        <span className="text-indigo-500 mx-1 font-extrabold text-4xl relative inline-block stroke-current">
+          Graduated
+          <svg className="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none">
+              <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" strokeWidth="2"></path>
+          </svg>
+        </span>
+        with a PBA from Roskilde Zealand.<br/>
+        <span className="italic"> I develop sites & apps with focus on UI and analytics </span>.<br/> 
+        <span className="text-indigo-500 mx-1 font-extrabold text-4xl relative inline-block stroke-current">
+        Lately: {" "}
+          <svg className="absolute -bottom-0.5 w-full max-h-1.5" viewBox="0 0 55 5" xmlns="http://www.w3.org/2000/svg"
+              preserveAspectRatio="none">
+              <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" strokeWidth="2"></path>
+          </svg>
+        </span>
+        <span className="">React (Next.js), Angular, NoSQL, SQL & PHP</span>.
       </motion.h1>
 
       <motion.div

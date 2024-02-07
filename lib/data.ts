@@ -151,7 +151,6 @@ export const projectsData = [
 
 
 export const skillsData = [
-  "HTML",
   "CSS",
   "JavaScript",
   "TypeScript",
@@ -169,7 +168,10 @@ export const skillsData = [
   "Angular",
   "Framer Motion",
   "PHP",
-  "C# / ASP.NET"
+  "C# / ASP.NET",
+  "PlanetScale",
+  "ShadCN",
+  "Zustand",
 ] as const;
 
 
