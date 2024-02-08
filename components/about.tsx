@@ -13,8 +13,8 @@ import { GiDiploma } from "react-icons/gi";
 import Image from "next/image";
 import PBA from "@/public/PBA.png";
 import Content from "./readMore";
-import ShowMore from "./FlyoutLink";
-import ShowMoreTwo from "./FlyoutLinkTwo";
+import ExampleWrapper from "./SpringModal";
+import ExampleWrapperTwo from "./SpringModalTwo";
 
 
 export default function About() {
@@ -66,8 +66,8 @@ export default function About() {
           </div>
 
           <div className="mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
-            <ShowMore />
-            <ShowMoreTwo />
+            <ExampleWrapper />
+            <ExampleWrapperTwo />
           </div>
 
           <p className="text-lg text-gray-500 dark:text-gray-400 font-medium">

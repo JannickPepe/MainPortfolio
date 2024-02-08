@@ -26,7 +26,7 @@ export default function Skills() {
   return (
     <section id="skills" ref={ref} className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
       <SectionHeading>My skills</SectionHeading>
-      <section className="relative z-0">
+      <div className="relative z-0">
         <div className="w-full max-w-5xl mx-auto px-4 md:px-6 pt-4">
           <div className="text-center">
             <a className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 items-center justify-center text-3xl 
@@ -68,7 +68,7 @@ export default function Skills() {
             </a>
           </div>
         </div>
-      </section>
+      </div>
       
     </section>
   );
