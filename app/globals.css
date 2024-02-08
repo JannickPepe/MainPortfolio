@@ -55,4 +55,7 @@ html.dark {
   .quote-icon{
     left:20px;
   }
+  .open-modal-body{
+    top: 5rem;
+  }
 }

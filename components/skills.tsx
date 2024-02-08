@@ -24,7 +24,7 @@ export default function Skills() {
   const { ref } = useSectionInView("Skills");
 
   return (
-    <section id="skills" ref={ref} className="mb-28 max-w-[53rem] scroll-mt-28 text-center sm:mb-40">
+    <section id="skills" ref={ref} className="mb-28 max-w-[70rem] scroll-mt-28 text-center sm:mb-40">
       <SectionHeading>My skills</SectionHeading>
       <div className="relative z-0">
         <div className="w-full max-w-5xl mx-auto px-4 md:px-6 pt-4">
@@ -37,7 +37,7 @@ export default function Skills() {
               before:absolute before:w-1/2 before:pb-[100%] 
               before:bg-[linear-gradient(90deg,_theme(colors.indigo.500/0)_0%,_theme(colors.indigo.500)_35%,_theme(colors.indigo.200)_50%,_theme(colors.indigo.500)_65%,_theme(colors.indigo.500/0)_100%)] before:animate-[spin_3s_linear_infinite]">
                 <span className="relative whitespace-nowrap">
-                  <span className="block px-8 py-6 rounded-full bg-gradient-to-r from-slate-200 to-sky-400 z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
+                  <span className="block px-8 py-6 rounded-full bg-gradient-to-r from-slate-300 to-purple-600 z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
                     <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 md:mt-8 lg:mt-10">
                       {skillsData.map((skill, index) => (
                         <motion.li

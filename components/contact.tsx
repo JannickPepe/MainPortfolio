@@ -8,6 +8,7 @@ import { useSectionInView } from "@/lib/hooks";
 import sendEmail from "../email/sendEmail";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
+import NewEmail from "./NewEmail";
 
 
 export default function Contact() {
@@ -34,7 +35,7 @@ export default function Contact() {
 
   return (
     <motion.section
-      className="w-[min(100%,38rem)] text-center"
+      className="w-[min(100%,70rem)] text-center"
       initial={{
         opacity: 0,
       }}
@@ -48,7 +49,7 @@ export default function Contact() {
         once: true,
       }}
     >
-      <section id="contact" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
+      <section id="contact" ref={ref} className="scroll-mt-28 mb-14 sm:mb-40">
         <SectionHeading>Contact me</SectionHeading>
         <ToastContainer
           position="top-center"
@@ -63,14 +64,8 @@ export default function Contact() {
           theme="light" 
         />
 
-        <p className="text-gray-700 -mt-6 dark:text-white/80">
-          Please contact me directly at{" "}
-          <a className="underline" href="mailto:jannickpedersen@live.dk">
-            jannickpedersen@live.dk
-          </a>{" "}
-          or through this form.
-        </p>
-
+      
+        {/*
         <form onSubmit={submitHandler} className="mt-8" autoComplete='id'>
           <div className="mb-1 sm:mb-2">
 
@@ -134,8 +129,11 @@ export default function Contact() {
           </div>
 
         </form>
+         */}
+        
+        <NewEmail />
       </section>
-    
+      
     </motion.section>
 
   );

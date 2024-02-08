@@ -25,7 +25,7 @@ const HoverDevCardsTwo = () => {
 const Card = ({ title, subtitle, Icon}) => {
 
     return (
-        <div className="w-full p-4 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white" >
+        <div className="w-full p-2 rounded border-[1px] border-slate-300 relative overflow-hidden group bg-white" >
             <div className="absolute inset-0 bg-gradient-to-r from-violet-600 to-indigo-600 translate-y-[100%] group-hover:translate-y-[0%] transition-transform duration-300" />
 
             <Icon className="absolute z-10 -top-12 -right-12 text-9xl text-slate-100 group-hover:text-violet-400 group-hover:rotate-12 transition-transform duration-300" />
