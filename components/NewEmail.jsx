@@ -25,9 +25,10 @@ const NewEmail = () => {
 				    <div className="my-4">
 					    <textarea placeholder="Message*" className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
 				    </div>
-				    <div className="my-2 w-1/2 lg:w-1/2">
-					    <button className="uppercase text-base font-bold tracking-wide h-full bg-blue-600 bg-clip-padding backdrop-filter backdrop-blur-lg bg-opacity-20 border border-gray-100
-p-3 rounded-lg w-full focus:outline-none focus:shadow-outline text-slate-600 hover:text-purple-500">
+				    <div className="my-2 text-center">
+					    <button className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 via-green-500 to-purple-700
+            dark:bg-gradient-to-bs hover:dark:bg-purple-900 text-white font-bold max-w-[400px]
+            mt-6 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition">
                 Send Message
               </button>
 				    </div>
@@ -37,7 +38,7 @@ p-3 rounded-lg w-full focus:outline-none focus:shadow-outline text-slate-600 hov
           backdrop-blur-sm bg-opacity-10 border border-purple-300 rounded-2xl">
             <div className="flex flex-col text-white">
               <h1 className="font-bold uppercase text-4xl my-4 text-slate-600">Hey <span className='text-purple-500'>You!</span> Over Here!</h1>
-              <p className="text-gray-400">Please contact me directly at <span className='underline text-sky-500'>jannickpedersen@live.dk</span> or through this form.</p>
+              <p className="text-gray-400">Please contact me directly at <span className='underline text-sky-500'>jannickpedersen@live.dk</span></p>
 
               <div className="flex text-start my-4">
                 <div className="flex flex-col">
@@ -61,13 +62,13 @@ p-3 rounded-lg w-full focus:outline-none focus:shadow-outline text-slate-600 hov
               
               <div className="flex items-center justify-center ">
                 <div className="flex flex-col">
-                  <div className="px-4 py-2 mx-autorounded-2xl">
+                  <div className="px-4 pt-2 mx-autorounded-2xl">
                     <div className="px-5 pt-3 bg-white shadow-lg rounded-2xl">
                       <div className="flex flex-row">
                         <div className="flex group">
-                          <a href="#" className="p-3 text-sky-700 hover:text-yellow-500">
+                          <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-gray-600 group-hover:text-gray-700
+                              <div className="mx-1 text-purple-600 group-hover:text-gray-700
                               transition-color duration-200">
                                 <FaFacebook size={24} />
                               </div>
@@ -82,9 +83,9 @@ p-3 rounded-lg w-full focus:outline-none focus:shadow-outline text-slate-600 hov
                         </div>
 
                         <div className="flex group">
-                          <a href="#" className="p-3 text-sky-700 hover:text-yellow-500">
+                          <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-gray-600 group-hover:text-gray-700
+                              <div className="mx-1 text-purple-600 group-hover:text-gray-700
                               transition-color duration-200">
                                 <FaLinkedinIn size={24} />
                               </div>
@@ -98,9 +99,9 @@ p-3 rounded-lg w-full focus:outline-none focus:shadow-outline text-slate-600 hov
                         </div>
 
                         <div className="flex group">
-                          <a href="#" className="p-3 text-sky-700 hover:text-yellow-500">
+                          <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-gray-600 group-hover:text-gray-700
+                              <div className="mx-1 text-purple-600 group-hover:text-gray-700
                               transition-color duration-200">
                                 <FaGithub size={24} />
                               </div>

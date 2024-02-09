@@ -10,11 +10,10 @@ import { BsArrowRight } from "react-icons/bs";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { IoAlertOutline } from "react-icons/io5";
 import { GiDiploma } from "react-icons/gi";
-import Image from "next/image";
-import PBA from "@/public/PBA.png";
 import Content from "./readMore";
 import ExampleWrapper from "./SpringModal";
 import ExampleWrapperTwo from "./SpringModalTwo";
+import ExampleWrapperThree from "./SpringModalThree";
 
 
 export default function About() {
@@ -61,12 +60,10 @@ export default function About() {
             I have been knowing coding for 7 years of my life now, mainly under education.<br/> In-between my computer science and PBA, I had some time where I took various courses. 
           </p>
           <Content />
-          <div className="mt-4 relative overflow-hidden bg-cover bg-no-repeat max-w-sm mx-auto rounded border bg-white p-1 dark:border-neutral-700 dark:bg-neutral-800">
-            <Image src={PBA} alt="jannick PBA diploma" className="transition duration-300 ease-in-out hover:scale-125" />
-          </div>
 
-          <div className="mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-2">
+          <div className="mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
             <ExampleWrapper />
+            <ExampleWrapperThree />
             <ExampleWrapperTwo />
           </div>
 
@@ -77,7 +74,9 @@ export default function About() {
 
           <Link
             href="#contact"
-            className="hover:animate-wiggle bg-[rgb(81,156,212)] hover:bg-orange-400 dark:bg-gradient-to-b from-indigo-500 to-purple-800 hover:dark:bg-purple-900 max-w-[400px] mx-auto text-white mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition"
+            className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 via-green-500 to-purple-700
+            dark:bg-gradient-to-bs hover:dark:bg-purple-900 max-w-[400px] mx-auto text-white font-bold 
+            mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
