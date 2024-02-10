@@ -37,25 +37,25 @@ const NewEmail = () => {
           <div className="w-full lg:-mt-[26rem] lg:w-2/6 px-8 py-12 ml-auto bg-sky-500 bg-clip-padding backdrop-filter 
           backdrop-blur-sm bg-opacity-10 rounded-2xl">
             <div className="flex flex-col text-white">
-              <h1 className="font-bold uppercase text-4xl my-4 text-slate-600">Hey <span className='text-purple-500'>You!</span> Over Here!</h1>
+              <h1 className="font-bold uppercase text-4xl my-4 text-slate-600 dark:text-indigo-400">Hey <span className='text-purple-600'>You!</span> Over Here!</h1>
               <p className="text-gray-400 mb-4">Please contact me directly at: <span className='underline text-sky-500 font-semibold tracking-wider'>Jannickpedersen@live.dk</span></p>
 
               <div className="flex text-start my-4">
-                <div className="flex flex-col mr-1">
+                <div className="flex flex-col mr-1 dark:opacity-60">
                   <FaMapMarkerAlt color='#079CFF' size={28} />
                 </div>
                 <div className="flex flex-col">
-                  <h2 className="text-2xl text-slate-600">Address</h2>
+                  <h2 className="text-2xl text-slate-600 dark:text-white">Address</h2>
                   <p className="text-gray-400">5555 Tailwind RD, Pleasant Grove, UT 73533</p>
                 </div>
               </div>
               
               <div className="flex my-4 text-start">
-                <div className="flex flex-col mr-1">
+                <div className="flex flex-col mr-1 dark:opacity-60">
                     <FaPhone color='#079CFF' size={28} />
                 </div>
                 <div className="flex flex-col">
-                  <h2 className="text-2xl text-slate-600">Phone</h2>
+                  <h2 className="text-2xl text-slate-600 dark:text-white">Phone</h2>
                   <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
                 </div>
               </div>
