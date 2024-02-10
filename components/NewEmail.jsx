@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { FaFacebook, FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { FaFacebook, FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
 const NewEmail = () => {
 
@@ -10,7 +10,7 @@ const NewEmail = () => {
 
 	        <div className="container mx-auto my-4 px-4 0">
 
-		      <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+		      <div className="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl shadow-purple-300">
             <div className="flex">
               <h1 className="font-bold uppercase text-5xl">Send <span className='text-purple-600'>me</span> a <br /> message</h1>
             </div>
@@ -34,15 +34,15 @@ const NewEmail = () => {
 				    </div>
 			    </div>
 
-          <div className="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-sky-500 bg-clip-padding backdrop-filter 
-          backdrop-blur-sm bg-opacity-10 border border-purple-300 rounded-2xl">
+          <div className="w-full lg:-mt-[26rem] lg:w-2/6 px-8 py-12 ml-auto bg-sky-500 bg-clip-padding backdrop-filter 
+          backdrop-blur-sm bg-opacity-10 rounded-2xl">
             <div className="flex flex-col text-white">
               <h1 className="font-bold uppercase text-4xl my-4 text-slate-600">Hey <span className='text-purple-500'>You!</span> Over Here!</h1>
-              <p className="text-gray-400">Please contact me directly at <span className='underline text-sky-500'>jannickpedersen@live.dk</span></p>
+              <p className="text-gray-400 mb-4">Please contact me directly at: <span className='underline text-sky-500 font-semibold tracking-wider'>Jannickpedersen@live.dk</span></p>
 
               <div className="flex text-start my-4">
-                <div className="flex flex-col">
-                  <i className="fas fa-map-marker-alt pt-2 pr-2" />
+                <div className="flex flex-col mr-1">
+                  <FaMapMarkerAlt color='#079CFF' size={28} />
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-slate-600">Address</h2>
@@ -51,8 +51,8 @@ const NewEmail = () => {
               </div>
               
               <div className="flex my-4 text-start">
-                <div className="flex flex-col">
-                  <i className="fas fa-phone-alt pt-2 pr-2" />
+                <div className="flex flex-col mr-1">
+                    <FaPhone color='#079CFF' size={28} />
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-slate-600">Phone</h2>
@@ -60,7 +60,7 @@ const NewEmail = () => {
                 </div>
               </div>
               
-              <div className="flex items-center justify-center ">
+              <div className="flex items-center justify-center mt-2">
                 <div className="flex flex-col">
                   <div className="px-4 pt-2 mx-autorounded-2xl">
                     <div className="px-5 pt-3 bg-white shadow-lg rounded-2xl">
@@ -68,11 +68,11 @@ const NewEmail = () => {
                         <div className="flex group">
                           <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-purple-600 group-hover:text-gray-700
+                              <div className="mx-1 text-gray-700 group-hover:text-purple-700
                               transition-color duration-200">
                                 <FaFacebook size={24} />
                               </div>
-                              <span className="text-xs mb-2 transition-all duration-200">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-purple-600">
                                 FaceBook
                               </span>
                               <span className="h-1 w-5 rounded-full group-hover:bg-yellow-500
@@ -85,11 +85,11 @@ const NewEmail = () => {
                         <div className="flex group">
                           <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-purple-600 group-hover:text-gray-700
+                              <div className="mx-1 text-gray-700 group-hover:text-purple-700
                               transition-color duration-200">
                                 <FaLinkedinIn size={24} />
                               </div>
-                              <span className="text-xs mb-2 transition-all duration-200">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-purple-600">
                                 LinkedIn
                               </span>
                               <span className="h-1 w-5 rounded-full group-hover:bg-yellow-500
@@ -101,11 +101,11 @@ const NewEmail = () => {
                         <div className="flex group">
                           <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-purple-600 group-hover:text-gray-700
+                              <div className="mx-1 text-gray-700 group-hover:text-purple-700
                               transition-color duration-200">
                                 <FaGithub size={24} />
                               </div>
-                              <span className="text-xs mb-2 transition-all duration-200">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-purple-600">
                                 Github
                               </span>
                               <span className="h-1 w-5 rounded-full group-hover:bg-yellow-500

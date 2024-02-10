@@ -14,7 +14,7 @@ const ReadMore = ({ children }) => {
             {isReadMore ? text.slice(0, 156) : text}
             <div
                 onClick={toggleReadMore}
-                className="read-or-hide mt-1 text-green-600 focus:outline-none flex justify-center hover:text-indigo-600 dark:hover:text-sky-500"
+                className="read-or-hide mt-1 max-w-[200px] mx-auto text-slate-800 font-semibold focus:outline-none flex justify-center hover:text-white dark:hover:text-sky-500 hover:bg-gradient-to-r from-indigo-500 to-purple-700 hover:rounded-2xl"
             >
                 {isReadMore ? "Read More" : "Close"}
             </div>

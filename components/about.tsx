@@ -11,10 +11,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { IoAlertOutline } from "react-icons/io5";
 import { GiDiploma } from "react-icons/gi";
 import Content from "./readMore";
-import ExampleWrapper from "./SpringModal";
-import ExampleWrapperTwo from "./SpringModalTwo";
-import ExampleWrapperThree from "./SpringModalThree";
-
+import {MeteorPreview} from "./MeteorsPreview";
 
 export default function About() {
 
@@ -54,20 +51,16 @@ export default function About() {
       >
         <section id="about" ref={ref} className="scroll-mt-28 mb-28 sm:mb-40">
           <SectionHeading>About me</SectionHeading>
-          <p className=" text-gray-500 dark:text-gray-400 font-medium">
+          <p className=" text-slate-600 dark:text-gray-400 font-medium">
             <GiDiploma color="#228b22" size={30} className="inline-block mr-2"/>
             Jannick Pedersen here, I am a 32 year old fulltime parent and I got finsihed my education summer 2023.
             I have been knowing coding for 7 years of my life now, mainly under education.<br/> In-between my computer science and PBA, I had some time where I took various courses. 
           </p>
           <Content />
+          <hr className="w-52 h-1 mx-auto bg-gradient-to-r from-indigo-500 to-purple-700 border-0 rounded my-2 dark:bg-gray-700" />
+          <MeteorPreview />
 
-          <div className="mt-10 mb-12 grid grid-cols-1 gap-6 sm:grid-cols-3">
-            <ExampleWrapper />
-            <ExampleWrapperThree />
-            <ExampleWrapperTwo />
-          </div>
-
-          <p className="text-lg text-gray-500 dark:text-gray-400 font-medium">
+          <p className="text-lg text-gray-500 dark:text-gray-400 font-bold my-4">
             <IoAlertOutline color="#B22222" size={30} className="inline-block" /> 
             I am currently looking for a full-time position as a fullstack developer with good UI experince or Software / App
           </p>
@@ -87,9 +80,13 @@ export default function About() {
               <BsArrowRight className="group-hover:translate-x-1 transition inline-block" />
             </div>
           </Link>
+        
+
+        
         </section>
 
       </motion.section>
+        
     </motion.div>
   
   );

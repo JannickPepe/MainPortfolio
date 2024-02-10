@@ -32,12 +32,12 @@ export default function Skills() {
             <a className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 items-center justify-center text-3xl 
             sm:text-4xl md:text-5xl font-semibold text-slate-900 before:absolute before:inset-0 
             before:-z-10 before:transition-colors before:duration-500 group" href="#0">
-              <span className="relative p-0.5 rounded-full bg-slate-200 group-hover:bg-slate-800 
+              <span className="relative p-0.5 rounded-full group-hover:bg-slate-800 
               transition duration-500 overflow-hidden flex items-center justify-center before:opacity-0 group-hover:before:opacity-100 
               before:absolute before:w-1/2 before:pb-[100%] 
               before:bg-[linear-gradient(90deg,_theme(colors.indigo.500/0)_0%,_theme(colors.indigo.500)_35%,_theme(colors.indigo.200)_50%,_theme(colors.indigo.500)_65%,_theme(colors.indigo.500/0)_100%)] before:animate-[spin_3s_linear_infinite]">
                 <span className="relative whitespace-nowrap">
-                  <span className="block px-8 py-6 rounded-full bg-gradient-to-r from-slate-300 to-purple-600 z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
+                  <span className="block px-8 py-6 rounded-full bg-gradient-to-r from-indigo-400 to-purple-600 z-10 group-hover:opacity-0 transition-opacity duration-500 ease-in-out">
                     <ul className="flex flex-wrap justify-center gap-2 text-lg text-gray-800 md:mt-8 lg:mt-10">
                       {skillsData.map((skill, index) => (
                         <motion.li

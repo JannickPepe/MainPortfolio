@@ -31,12 +31,21 @@ module.exports = {
           from: { transform: 'translateX(0)' },
           to: { transform: 'translateX(-100%)' },
         },
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: 1 },
+          "70%": { opacity: 1 },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: 0,
+          },
+        },
       },
       animation: {
         wiggle: 'wiggle 1s ease-in-out infinite',
         'waving-hand': 'wave 2s ease-in-out 5',
         'hover-waving-hand': 'wave 2s linear infinite',
         'infinite-scroll': 'infinite-scroll 6s linear infinite',
+        "meteor-effect": "meteor 5s linear infinite",
       },
     },
   },
