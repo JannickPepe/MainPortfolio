@@ -5,6 +5,8 @@ import SectionHeading from "./section-heading";
 import { skillsData } from "@/lib/data";
 import { useSectionInView } from "@/lib/hooks";
 import { motion } from "framer-motion";
+import { FaListUl } from "react-icons/fa";
+
 
 const fadeInAnimationVariants = {
   initial: {
@@ -21,12 +23,68 @@ const fadeInAnimationVariants = {
 };
 
 export default function Skills() {
+
   const { ref } = useSectionInView("Skills");
+  
+  const [openTab, setOpenTab] = React.useState(1);
+
 
   return (
     <section id="skills" ref={ref} className="mb-28 max-w-[70rem] scroll-mt-28 text-center sm:mb-40">
       <SectionHeading>My skills</SectionHeading>
-      <div className="relative z-0">
+
+      <div className="flex flex-wrap dark:text-slate-700">
+        <div className="w-full ">
+          <ul
+            className="flex mb-0 max-w-[400px] list-none flex-wrap pt-3 pb-4 flex-row mx-auto"
+            role="tablist"
+          >
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                  (openTab === 1
+                    ? "text-white bg-purple-600"
+                    : "text-blueGray-600 bg-white")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(1);
+                }}
+                data-toggle="tab"
+                href="#link1"
+                role="tablist"
+                aria-current="page"
+              >
+                <div className="flex text-base p-1"><FaListUl size={20} className="mr-2 mt-0.5"></FaListUl>Box View</div>
+              </a>
+            </li>
+            <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+              <a
+                className={
+                  "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                  (openTab === 2
+                    ? "text-white bg-purple-600"
+                    : "text-blueGray-600 bg-white")
+                }
+                onClick={e => {
+                  e.preventDefault();
+                  setOpenTab(2);
+                }}
+                data-toggle="tab"
+                href="#link2"
+                role="tablist"
+              >
+                <div className="flex text-base p-1"><FaListUl size={20} className="mr-2 mt-0.5"></FaListUl>List View</div>
+              </a>
+            </li>
+           
+          </ul>
+          <div className="relative flex flex-col w-full mb-6 rounded">
+            <div className="px-4 py-5 flex-auto">
+              <div className="tab-content tab-space">
+                <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                <div className="relative z-0">
         <div className="w-full max-w-5xl mx-auto px-4 md:px-6 pt-4">
           <div className="text-center">
             <a className="flex flex-col lg:flex-row space-y-4 lg:space-y-0 lg:space-x-6 items-center justify-center text-3xl 
@@ -69,6 +127,58 @@ export default function Skills() {
           </div>
         </div>
       </div>
+                </div>
+
+                <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                  <div className="grid grid-cols-1 lg:grid-cols-2 xl:lg:grid-cols-2 gap-2 lg:gap-8 xl:gap-8">
+                  <div className="">
+                  <h1 className="pt-2 sm:pt-5 text-slate-800 font-semibold">Html: <span className=" text-base text-indigo-500">80%</span></h1>
+    <div className="mt-2 mx-auto h-4 relative max-w-[24rem] rounded-full overflow-hidden">
+        <div className=" w-full h-full bg-gray-200 absolute "></div>
+        <div className=" h-full bg-yellow-400 sm:bg-green-500 absolute" style={{width:'80%'}}></div>
+    </div>
+
+    <h1 className="pt-2 sm:pt-5 text-slate-800 font-semibold">TailwindCSS: <span className=" text-base text-indigo-500">70%</span></h1>
+    <div className="mt-2 mx-auto h-4 relative max-w-[24rem] rounded-full overflow-hidden">
+        <div className=" w-full h-full bg-gray-200 absolute "></div>
+        <div className=" h-full bg-red-500 sm:bg-yellow-400 absolute" style={{width:'70%'}}></div>
+    </div>
+    <h1 className="pt-2 sm:pt-5 text-slate-800 font-semibold">PHP: <span className=" text-base text-indigo-500">60%</span></h1>
+    <div className="mt-2 mx-auto h-4 relative max-w-[24rem] rounded-full overflow-hidden">
+        <div className=" w-full h-full bg-gray-200 absolute "></div>
+        <div className=" h-full bg-green-500 sm:bg-red-500 absolute" style={{width:'60%'}}></div>
+    </div>
+   
+                  </div>
+                  <div className="">
+                  <h1 className="pt-2 sm:pt-5 text-slate-800 font-semibold">Html: <span className=" text-base text-indigo-500">80%</span></h1>
+    <div className="mt-2 mx-auto h-4 relative max-w-[24rem] rounded-full overflow-hidden">
+        <div className=" w-full h-full bg-gray-200 absolute "></div>
+        <div className=" h-full bg-yellow-400 sm:bg-green-500 absolute" style={{width:'80%'}}></div>
+    </div>
+
+    <h1 className="pt-2 sm:pt-5 text-slate-800 font-semibold">TailwindCSS: <span className=" text-base text-indigo-500">70%</span></h1>
+    <div className="mt-2 mx-auto h-4 relative max-w-[24rem] rounded-full overflow-hidden">
+        <div className=" w-full h-full bg-gray-200 absolute "></div>
+        <div className=" h-full bg-red-500 sm:bg-yellow-400 absolute" style={{width:'70%'}}></div>
+    </div>
+    <h1 className="pt-2 sm:pt-5 text-slate-800 font-semibold">PHP: <span className=" text-base text-indigo-500">60%</span></h1>
+    <div className="mt-2 mx-auto h-4 relative max-w-[24rem] lg:w-96 rounded-full overflow-hidden">
+        <div className=" w-full h-full bg-gray-200 absolute "></div>
+        <div className=" h-full bg-green-500 sm:bg-red-500 absolute" style={{width:'60%'}}></div>
+    </div>
+   
+                  </div>
+                  </div>
+               
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      
       
     </section>
   );
