@@ -78,7 +78,7 @@ export default function Skills() {
                 <div className="flex text-base p-1"><FaListUl size={20} className="mr-2 mt-0.5"></FaListUl>List View</div>
               </a>
             </li>
-           
+          
           </ul>
           <div className="relative flex flex-col w-full mb-6 rounded">
             <div className="px-4 py-5 flex-auto">
