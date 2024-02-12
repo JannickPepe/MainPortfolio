@@ -4,15 +4,20 @@ import Image from "next/image";
 import React from "react";
 import { motion } from "framer-motion";
 import Link from "next/link";
-import { BsArrowRight, BsLinkedin } from "react-icons/bs";
+import { BsArrowRight } from "react-icons/bs";
 import { HiDownload } from "react-icons/hi";
-import { FaFacebook, FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
+
+import IconButton from "./IconButton";
+import { FaGithub } from "react-icons/fa"
+import { FaMeta, FaLinkedin, FaDiscord } from "react-icons/fa6";
+
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
+
 
   return (
     <section
@@ -72,7 +77,7 @@ export default function Intro() {
               <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" strokeWidth="2"></path>
           </svg>
         </span>
-        with a PBA from Roskilde Zealand.<br/>
+        with a <span className="font-bold">PBA</span> from Roskilde Zealand.<br/>
         <span className="italic"> I develop sites & apps with focus on UI and analytics </span>.<br/> 
         <span className="text-indigo-500 mx-1 font-extrabold text-4xl relative inline-block stroke-current">
         Lately: {" "}
@@ -81,7 +86,7 @@ export default function Intro() {
               <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" strokeWidth="2"></path>
           </svg>
         </span>
-        <span className="">React (Next.js), Angular, NoSQL, SQL & PHP</span>.
+        <span className="italic">React (Next.js), Angular, NoSQL, SQL & PHP</span>.
       </motion.h1>
 
       <motion.div
@@ -113,28 +118,26 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <a
-          className="bg-white p-4 text-gray-700 hover:text-gray-950 flex items-center gap-2 rounded-full focus:scale-[1.15] hover:scale-[1.15] active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://linkedin.com"
-          target="_blank"
-        >
-          <BsLinkedin />
-        </a>
-
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
-          target="_blank"
-        >
-          <FaGithubSquare />
-        </a>
-        <a
-          className="bg-white p-4 text-gray-700 flex items-center gap-2 text-[1.35rem] rounded-full focus:scale-[1.15] hover:scale-[1.15] hover:text-gray-950 active:scale-105 transition cursor-pointer borderBlack dark:bg-white/10 dark:text-white/60"
-          href="https://github.com"
-          target="_blank"
-        >
-          <FaFacebook />
-        </a>
+        <Link target="_blank" href='https://github.com/JannickPepe'>
+            <IconButton text="Github" color="bg-gradient-to-r from-indigo-500 to-purple-700">
+              <FaGithub size={30} />
+            </IconButton>
+          </Link>
+          <Link target="_blank" href='https://www.facebook.com/' >
+            <IconButton text="Meta" color="bg-gradient-to-r from-indigo-500 to-purple-700" >
+              <FaMeta size={30} />
+            </IconButton>
+          </Link>
+          <Link target="_blank" href="https://www.linkedin.com/in/jannick-pedersen-3b8a36119">
+            <IconButton text="LinkedIn" color="bg-gradient-to-r from-indigo-500 to-purple-700">
+              <FaLinkedin size={30} />
+            </IconButton>
+          </Link>
+          <Link target="_blank" href='https://discord.com/invite/WGqJ2CZebb'>
+            <IconButton text="Discord" color="bg-gradient-to-r from-indigo-500 to-purple-700">
+              <FaDiscord size={30} />
+            </IconButton>
+          </Link>
       </motion.div>
 
       <motion.div
@@ -145,7 +148,6 @@ export default function Intro() {
           delay: 0.1,
         }}
       >
-       
       </motion.div>
     </section>
   );

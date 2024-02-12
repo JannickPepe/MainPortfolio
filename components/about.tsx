@@ -69,7 +69,7 @@ export default function About() {
             href="#contact"
             className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 via-green-400 to-purple-700
             dark:bg-gradient-to-bs hover:dark:bg-purple-900 max-w-[400px] mx-auto text-white font-bold 
-            mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition"
+            mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition text-lg"
             onClick={() => {
               setActiveSection("Contact");
               setTimeOfLastClick(Date.now());
@@ -77,7 +77,7 @@ export default function About() {
           >
             <div className="mx-auto focus:scale-110 hover:scale-110">
               Contact me here{" "}
-              <BsArrowRight className="group-hover:translate-x-1 transition inline-block" />
+              <BsArrowRight size={24} className="group-hover:translate-x-1 transition inline-block" />
             </div>
           </Link>
         

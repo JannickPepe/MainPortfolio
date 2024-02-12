@@ -28,7 +28,7 @@ const NewEmail = () => {
 				    <div className="my-2 text-center">
 					    <button className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 via-green-400 to-purple-700
             dark:bg-gradient-to-bs hover:dark:bg-purple-900 text-white font-bold max-w-[400px]
-            mt-6 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition">
+            mt-6 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition text-lg">
                 Send Message
               </button>
 				    </div>
@@ -41,8 +41,8 @@ const NewEmail = () => {
               <p className="text-gray-400 mb-4">Please contact me directly at: <span className='underline text-sky-500 font-semibold tracking-wider'>Jannickpedersen@live.dk</span></p>
 
               <div className="flex text-start my-4">
-                <div className="flex flex-col mr-1 dark:opacity-60">
-                  <FaMapMarkerAlt color='#079CFF' size={28} />
+                <div className="flex flex-col mr-1 dark:opacity-60 text-purple-700 dark:text-indigo-600">
+                  <FaMapMarkerAlt size={28} />
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-slate-600 dark:text-white">Address</h2>
@@ -51,8 +51,8 @@ const NewEmail = () => {
               </div>
               
               <div className="flex my-4 text-start">
-                <div className="flex flex-col mr-1 dark:opacity-60">
-                    <FaPhone color='#079CFF' size={28} />
+                <div className="flex flex-col mr-1 dark:opacity-60 text-purple-700 dark:text-indigo-600">
+                    <FaPhone size={28} />
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-slate-600 dark:text-white">Phone</h2>
@@ -72,10 +72,10 @@ const NewEmail = () => {
                               transition-color duration-200">
                                 <FaFacebook size={24} />
                               </div>
-                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-purple-600">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-indigo-500">
                                 FaceBook
                               </span>
-                              <span className="h-1 w-5 rounded-full group-hover:bg-yellow-500
+                              <span className="h-1 w-5 rounded-full group-hover:bg-black
                               transition-all duration-150 delay-100">
                               </span>
                             </span>
@@ -89,10 +89,10 @@ const NewEmail = () => {
                               transition-color duration-200">
                                 <FaLinkedinIn size={24} />
                               </div>
-                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-purple-600">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-indigo-500">
                                 LinkedIn
                               </span>
-                              <span className="h-1 w-5 rounded-full group-hover:bg-yellow-500
+                              <span className="h-1 w-5 rounded-full group-hover:bg-black
                                 transition-all duration-150 delay-100"></span>
                             </span>
                           </a>
@@ -105,10 +105,10 @@ const NewEmail = () => {
                               transition-color duration-200">
                                 <FaGithub size={24} />
                               </div>
-                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-purple-600">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-indigo-500">
                                 Github
                               </span>
-                              <span className="h-1 w-5 rounded-full group-hover:bg-yellow-500
+                              <span className="h-1 w-5 rounded-full group-hover:bg-black
                                 transition-all duration-150 delay-100">
                               </span>
                             </span>
