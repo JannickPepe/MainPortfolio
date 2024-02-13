@@ -20,20 +20,19 @@ const Tabs = ({ color }) => {
         <div className="flex flex-wrap">
             <div className="">
                 <h2 className="text-slate-500 font-bold text-xs inline-block" >More on the way!!</h2>
-                <div className={"text-white cursor-pointer bg-red-400 rounded-xl hover:text-black inline-block ml-1 top-1 relative"}
+                <div className={"text-white cursor-pointer bg-sky-500 hover:bg-red-500 rounded-xl inline-block ml-1 top-1.5 relative"}
                     onClick={e => {
                     setOpenTab(false);
                     }}
                 > 
-                    <IoMdCloseCircle size={20} />
+                    <IoMdCloseCircle size={21} />
                 </div>
                 <ul className="flex mb-0 flex-wrap pt-3 pb-4 flex-row" role="tablist" >
-
-                <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 1
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600"
-                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-slate-400 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
+                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-sky-200 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
                             }
                             onClick={e => {
                             e.preventDefault();
@@ -51,7 +50,7 @@ const Tabs = ({ color }) => {
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 2
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600"
-                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-slate-400 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
+                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-sky-200 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
                             }
                             onClick={e => {
                             e.preventDefault();
@@ -65,11 +64,11 @@ const Tabs = ({ color }) => {
                         </a>
                     </li>
 
-                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center md:mt-2 lg:mt-2">
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 3
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600"
-                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-slate-400 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
+                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-sky-200 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
                             }
                             onClick={e => {
                             e.preventDefault();
@@ -87,7 +86,7 @@ const Tabs = ({ color }) => {
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 4
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600"
-                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-slate-400 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
+                                : "text-slate-700 bg- dark:text-white dark:bg-" + color + "-600 bg-gradient-to-l from-sky-200 to-white dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800")
                             }
                             onClick={e => {
                             e.preventDefault();
@@ -144,7 +143,7 @@ export default function VerticalTabs() {
 
     return (
         <>
-        <Tabs color="pink" />
+            <Tabs color="pink" />
         </>
     );
 

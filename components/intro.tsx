@@ -14,7 +14,25 @@ import { FaGithub } from "react-icons/fa"
 import { FaMeta, FaLinkedin, FaDiscord } from "react-icons/fa6";
 
 
+const fadeInAnimationVariants = {
+    initial: {
+        opacity: 0,
+        y: 100,
+    },
+    animate: (index: number) => ({
+        opacity: 1,
+        y: 0,
+        transition: {
+        delay: 0.05 * index,
+        ease: "easeOut", 
+        duration: 0.5,
+        },
+    }),
+};
+
+
 export default function Intro() {
+
   const { ref } = useSectionInView("Home", 0.5);
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
@@ -91,11 +109,12 @@ export default function Intro() {
 
       <motion.div
         className="flex flex-col sm:flex-row items-center justify-center gap-4 px-4 text-lg font-medium"
-        initial={{ opacity: 0, y: 100 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{
-          delay: 0.1,
-        }}
+        variants={fadeInAnimationVariants}
+        initial="initial"
+        whileInView="animate"
+          viewport={{
+            once: false,
+          }}
       >
 
         <Link

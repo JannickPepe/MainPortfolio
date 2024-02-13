@@ -1,7 +1,29 @@
-import Image from "next/image";
+
+'use client';
+
 import React from "react";
+import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import  VerticalTabs  from "./VerticalTabs";
+import { motion } from "framer-motion";
+
+
+const fadeInAnimationVariants = {
+  initial: {
+      opacity: 0,
+      y: 100,
+  },
+  animate: (index: number) => ({
+      opacity: 1,
+      y: 0,
+      transition: {
+      delay: 0.05 * index,
+      ease: "easeOut", 
+      duration: 0.5,
+      },
+  }),
+};
+
 
 export default function Footer() {
 
@@ -57,7 +79,7 @@ export default function Footer() {
             </div>
           </div>
 
-          <div className="grid grid-cols-1 gap-6 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3 lg:ml-6">
+          <div className="grid grid-cols-1 gap-6 lg:col-span-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:ml-6">
             <div className="">
               <p className="font-medium dark:text-blue-700 text-2xl">
                 Sections
@@ -88,7 +110,17 @@ export default function Footer() {
                 Udemy Diplomas
               </p>
               <div className="flex flex-col mt-4 text-gray-500 text-lg">
-                <VerticalTabs />
+                <motion.div
+                  variants={fadeInAnimationVariants}
+                  initial="initial"
+                  whileInView="animate"
+                  viewport={{
+                    once: false,
+                  }}
+                                      
+                >
+                  <VerticalTabs />
+                </motion.div>
               </div>
             </div>
           
@@ -98,9 +130,9 @@ export default function Footer() {
           © 2023 Jannick Pedersen
         </p>
         <p className="text-xs mt-2 dark:text-slate-600">
-            <span className="font-semibold">About this website:</span> built with
+            <span className="font-semibold">About this website:</span> Built with
             React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
-            Framer Motion, React Email & Resend, Vercel hosting.
+            Framer Motion, EmailJS and Vercel hosting.
         </p>
       </div>
     </footer>
