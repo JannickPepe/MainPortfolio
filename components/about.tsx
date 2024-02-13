@@ -60,7 +60,7 @@ export default function About() {
           <hr className="w-52 h-1 mx-auto bg-gradient-to-r from-indigo-500 to-purple-700 border-0 rounded my-2 dark:bg-gray-700" />
           <MeteorPreview />
 
-          <p className="text-lg text-gray-500 dark:text-gray-400 font-bold my-4">
+          <p className="text-base lg:text-lg xl:text-lg text-gray-500 dark:text-gray-400 font-bold my-4">
             <IoAlertOutline color="#B22222" size={30} className="inline-block" /> 
             I am currently looking for a full-time position as a fullstack developer with good UI experince or Software / App
           </p>

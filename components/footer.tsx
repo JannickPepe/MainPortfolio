@@ -1,6 +1,7 @@
 import Image from "next/image";
 import React from "react";
 import { BsArrowRight } from "react-icons/bs";
+import  VerticalTabs  from "./VerticalTabs";
 
 export default function Footer() {
 
@@ -9,7 +10,7 @@ export default function Footer() {
     <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
 
       <div className="h-[120px] bg-black flex justify-center items-center">
-        <div className="relative inline-flex  group">
+        <div className="relative inline-flex group">
           <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
           </div>
           <a href="https://jannickportfolio.netlify.app/" title="Go to 3D Portfolio" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
@@ -19,12 +20,14 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="max-w-screen-xl px-4 py-16 mx-auto sm:px-6 lg:px-8">
-        <div className="grid grid-cols-1 gap-8 lg:grid-cols-3">
+      <div className="px-4 py-16 mx-auto sm:px-6 lg:px-16">
+        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div>
             <div>
               <Image src="https://i.ibb.co/xJmRm7h/jannickogkyle.jpg" width={50} height={50} className="rounded-full inline-block" alt="logo" />
-              <h3 className="inline-block text-2xl font-semibold px-3 dark:text-slate-700 box-decoration-slice bg-gradient-to-r from-indigo-600 to-[#44BCFF] text-white rounded-full ml-2">Jannick Pedersen</h3>
+              <h3 className="inline-block text-2xl font-semibold px-3 box-decoration-slice bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600 text-white rounded-full ml-2">
+                Jannick Pedersen
+              </h3>
             </div>
             <p className="max-w-md px-1 mt-4 text-sm text-gray-600">
             In 2023 summer i graduated from Roskilde Zealand with a Proffesional Bachelor in the area of fullstack programming and app, I have also a Compuer Science diploma from Roksile Zealand<br/>
@@ -53,7 +56,8 @@ export default function Footer() {
               </a>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-8 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3 lg:ml-6">
+
+          <div className="grid grid-cols-1 gap-6 lg:col-span-2 sm:grid-cols-2 lg:grid-cols-3 lg:ml-6">
             <div className="">
               <p className="font-medium dark:text-blue-700 text-2xl">
                 Sections
@@ -80,13 +84,11 @@ export default function Footer() {
               </div>
             </div>
             <div>
-              <p className="font-medium dark:text-blue-700 hover:cursor-pointer text-2xl">
-                Helpful Links
+              <p className="font-medium dark:text-blue-700 text-2xl">
+                Udemy Diplomas
               </p>
-              <div className="flex flex-col mt-4 space-y-2 text-gray-500 text-lg">
-                <a href="#contact" className="hover:opacity-75">Contact</a>
-                <a className="hover:opacity-75">FAQs</a>
-                <a className="hover:opacity-75">jannickpedersen@live.dk</a>
+              <div className="flex flex-col mt-4 text-gray-500 text-lg">
+                <VerticalTabs />
               </div>
             </div>
           
