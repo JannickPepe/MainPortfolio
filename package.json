@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@emailjs/browser": "^3.11.0",
+    "@headlessui/react": "^1.7.18",
     "@mdi/font": "^7.4.47",
     "@react-email/components": "^0.0.7",
     "@react-email/tailwind": "^0.0.8",
