@@ -12,6 +12,12 @@ import { IoAlertOutline } from "react-icons/io5";
 import { GiDiploma } from "react-icons/gi";
 import Content from "./readMore";
 import {MeteorPreview} from "./MeteorsPreview";
+import Paragraph from '@/components/Paragraph';
+import Word from '@/components/Word';
+import Character from '@/components/Character';
+
+const paragraph = "I am currently looking for a fulltime position as a fullstack developer, app or software deveveloper. With good UI experince and usage of analytic tools"
+
 
 export default function About() {
 
@@ -33,6 +39,7 @@ export default function About() {
 
   const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
+  const words = paragraph.split(" ")
 
   return (
     <motion.div 
@@ -60,10 +67,23 @@ export default function About() {
           <hr className="w-52 h-1 mx-auto bg-gradient-to-r from-indigo-500 to-purple-700 border-0 rounded my-2 dark:bg-gray-700" />
           <MeteorPreview />
 
-          <p className="text-base lg:text-lg xl:text-lg text-gray-500 dark:text-gray-400 font-bold my-4">
+          {/*
+            <p className="text-base lg:text-lg xl:text-lg text-gray-500 dark:text-gray-400 font-bold my-4">
             <IoAlertOutline color="#B22222" size={30} className="inline-block" /> 
             I am currently looking for a full-time position as a fullstack developer with good UI experince or Software / App
           </p>
+
+           */}
+  
+          {/*
+            <Paragraph paragraph={paragraph}/>
+            <Word paragraph={paragraph}/>
+           */}
+        
+          <IoAlertOutline color="#B22222" size={40} className="relative md:ml-7 lg:ml-0 xl:ml-0 top-[2.5rem] lg:top-[4.25rem] xl:top-[4.25rem]" />
+          <div className="text-sky-500 dark:text-white px-8 md:ml-10 lg:px-0 lg:ml-10 xl:ml-10 lg:py-4 xl:px-0 xl:py-4 text-[20px] lg:text-[40px] xl:text-[40px]">
+            <Character paragraph={paragraph} />
+          </div>
 
           <Link
             href="#contact"
@@ -80,11 +100,8 @@ export default function About() {
               <BsArrowRight size={24} className="group-hover:translate-x-1 transition inline-block" />
             </div>
           </Link>
-        
-
-        
+      
         </section>
-
       </motion.section>
         
     </motion.div>

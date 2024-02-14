@@ -61,13 +61,6 @@ export default function Footer() {
             It has both been SQL and NoSQL, depends on the project 
             Various CSS frameworks experience such as, React-Bootstrap, Bootstrap, Tailwind and Ionic5, but also ShadCN for UI components.
             </p>
-            <div className="flex items-center mt-4"> 
-              <hr className="flex-grow border-t border-gray-300" /> 
-              <span className="px-3 text-gray-500 text-sm font-semibold"> 
-                Disclaimer & Credit
-              </span> 
-              <hr className="flex-grow border-t border-gray-300" /> 
-            </div> 
           </div>
 
           <div className="grid grid-cols-1 gap-6 lg:col-span-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:ml-6">
@@ -117,6 +110,13 @@ export default function Footer() {
           
           </div>
         </div>
+        <div className="flex items-center mt-2 lg:mt-6 xl:mt-6 max-w-[440px]"> 
+              <hr className="flex-grow border-t border-gray-300" /> 
+              <span className="px-3 text-gray-500 text-sm font-semibold"> 
+                Disclaimer & Credit
+              </span> 
+              <hr className="flex-grow border-t border-gray-300" /> 
+            </div> 
         <p className="mt-2 text-xs text-gray-800">
           © 2023 Jannick Pedersen
         </p>
