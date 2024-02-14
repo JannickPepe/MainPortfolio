@@ -4,6 +4,7 @@ import { FaCss3Alt } from "react-icons/fa";
 import { useState } from "react";
 import HoverDevCardsTwo from "./HoverDevCardsTwo";
 import { IoMdClose } from "react-icons/io";
+import { BsArrowRight } from "react-icons/bs";
 
 
 const ExampleWrapperTwo = () => {
@@ -15,7 +16,7 @@ const ExampleWrapperTwo = () => {
         <div className="flex justify-center text-white hover:text-slate-300 rounded-lg py-4">
             <button onClick={() => setIsOpen(true)} className="group text-lg font-bold text-center transition-all duration-300 ease-in-out">
                 <span className='bg-left-bottom bg-gradient-to-r from-indigo-500 to-purple-700 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] transition-all duration-500 ease-out'> 
-                    CSS, UI & Analtics
+                    CSS, UI & Analtics <BsArrowRight size={16} className="group-hover:translate-x-1 transition inline-block" />
                 </span> 
             </button>
             <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />

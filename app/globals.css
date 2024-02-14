@@ -59,6 +59,15 @@ html.dark {
   animation: AnimationName 3s ease infinite;
 }
 
+.tooltip {
+  @apply invisible absolute;
+}
+
+.has-tooltip:hover .tooltip {
+  @apply visible z-50;
+}
+
+
 @keyframes AnimationName {
   0%,
   100% {

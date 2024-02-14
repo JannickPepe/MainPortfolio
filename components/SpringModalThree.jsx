@@ -6,6 +6,7 @@ import { useState } from "react";
 import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
 import PBA from "@/public/PBA.png";
+import { BsArrowRight } from "react-icons/bs";
 
 
 const ExampleWrapperThree = () => {
@@ -16,7 +17,7 @@ const ExampleWrapperThree = () => {
         <div className="flex justify-center text-white hover:text-slate-300 py-4 rounded-lg">
             <button onClick={() => setIsOpen(true)} className="group text-lg font-bold text-center transition-all duration-300 ease-in-out">
                 <span className='bg-left-bottom bg-gradient-to-r from-indigo-500 to-purple-700 bg-[length:0%_4px] bg-no-repeat group-hover:bg-[length:100%_4px] transition-all duration-500 ease-out '> 
-                    Diploma Certificate
+                    Diploma Certificate <BsArrowRight size={16} className="group-hover:translate-x-1 transition inline-block" />
                 </span> 
             </button>
             <SpringModal isOpen={isOpen} setIsOpen={setIsOpen} />
