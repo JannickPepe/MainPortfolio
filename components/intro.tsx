@@ -137,7 +137,7 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <div className="flex gap-4">
+        <div className="flex gap-4 mt-2 md:mt-2 lg:mt-0 xl:mt-0">
           <Link target="_blank" href='https://github.com/JannickPepe' className="flex-auto">
             <IconButton text="Github" color="bg-gradient-to-r from-indigo-500 to-purple-700">
               <FaGithub size={30} />
@@ -159,7 +159,7 @@ export default function Intro() {
             </IconButton>
           </Link>
         </div>
-       
+      
       </motion.div>
 
       <motion.div
