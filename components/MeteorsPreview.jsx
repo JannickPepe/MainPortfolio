@@ -8,7 +8,7 @@ import ExampleWrapperTwo from "./SpringModalTwo";
 export const MeteorPreview = () => {
 
     return (
-        <div className="my-12">
+        <div className="mt-14 mb-6">
             <div className=" relative">
                 <div className="absolute inset-0 h-full w-full bg-gradient-to-r from-blue-500 to-teal-500 transform scale-[0.90] bg-red-500 rounded-full blur-3xl" 
                 />

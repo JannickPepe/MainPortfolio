@@ -26,7 +26,7 @@ const NewEmail = () => {
 					    <textarea placeholder="Message*" className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
 				    </div>
 				    <div className="my-2 text-center">
-					    <button className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 via-green-400 to-purple-700
+					    <button className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 hover:via-white to-purple-700
             dark:bg-gradient-to-bs hover:dark:bg-purple-900 text-white font-bold max-w-[400px]
             mt-6 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition text-lg">
                 Send Message
@@ -63,16 +63,17 @@ const NewEmail = () => {
               <div className="flex items-center justify-center mt-2">
                 <div className="flex flex-col">
                   <div className="px-4 pt-2 mx-autorounded-2xl">
-                    <div className="px-5 pt-3 bg-white shadow-lg rounded-2xl">
+                    <div className="px-5 pt-3 rounded-2xl">
                       <div className="flex flex-row">
+                        
                         <div className="flex group">
                           <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-gray-700 group-hover:text-purple-700
+                              <div className="mx-1 text-gray-700 dark:text-indigo-400 group-hover:text-purple-700
                               transition-color duration-200">
                                 <FaFacebook size={24} />
                               </div>
-                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-indigo-500">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-slate-500">
                                 FaceBook
                               </span>
                               <span className="h-1 w-5 rounded-full group-hover:bg-black
@@ -85,11 +86,11 @@ const NewEmail = () => {
                         <div className="flex group">
                           <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-gray-700 group-hover:text-purple-700
+                              <div className="mx-1 text-gray-700 dark:text-indigo-400 group-hover:text-purple-700
                               transition-color duration-200">
                                 <FaLinkedinIn size={24} />
                               </div>
-                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-indigo-500">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-slate-500">
                                 LinkedIn
                               </span>
                               <span className="h-1 w-5 rounded-full group-hover:bg-black
@@ -101,11 +102,11 @@ const NewEmail = () => {
                         <div className="flex group">
                           <a href="#" className="p-3 text-black hover:text-yellow-500">
                             <span className="flex flex-col items-center">
-                              <div className="mx-1 text-gray-700 group-hover:text-purple-700
+                              <div className="mx-1 text-gray-700 dark:text-indigo-400 group-hover:text-purple-700
                               transition-color duration-200">
                                 <FaGithub size={24} />
                               </div>
-                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-indigo-500">
+                              <span className="text-xs font-semibold my-1 transition-all duration-200 text-slate-500">
                                 Github
                               </span>
                               <span className="h-1 w-5 rounded-full group-hover:bg-black

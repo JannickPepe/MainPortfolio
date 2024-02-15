@@ -119,7 +119,7 @@ export default function Intro() {
 
         <Link
           href="https://jannickportfolio.netlify.app/"
-          className=" group bg-blue-600 text-white px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+          className=" group bg-blue-600 text-white hover:text-slate-300 px-7 py-3 flex items-center gap-2 rounded-full outline-none focus:scale-110 hover:scale-110 hover:bg-gradient-to-r hover:from-indigo-500 hover:to-purple-500 active:scale-105 transition"
           onClick={() => {
             setTimeOfLastClick(Date.now());
           }}
@@ -137,26 +137,29 @@ export default function Intro() {
           <HiDownload className="opacity-60 group-hover:translate-y-1 transition" />
         </a>
 
-        <Link target="_blank" href='https://github.com/JannickPepe'>
+        <div className="flex gap-4">
+          <Link target="_blank" href='https://github.com/JannickPepe' className="flex-auto">
             <IconButton text="Github" color="bg-gradient-to-r from-indigo-500 to-purple-700">
               <FaGithub size={30} />
             </IconButton>
           </Link>
-          <Link target="_blank" href='https://www.facebook.com/' >
+          <Link target="_blank" href='https://www.facebook.com/' className="flex-auto">
             <IconButton text="Meta" color="bg-gradient-to-r from-indigo-500 to-purple-700" >
               <FaMeta size={30} />
             </IconButton>
           </Link>
-          <Link target="_blank" href="https://www.linkedin.com/in/jannick-pedersen-3b8a36119">
+          <Link target="_blank" href="https://www.linkedin.com/in/jannick-pedersen-3b8a36119" className="flex-auto">
             <IconButton text="LinkedIn" color="bg-gradient-to-r from-indigo-500 to-purple-700">
               <FaLinkedin size={30} />
             </IconButton>
           </Link>
-          <Link target="_blank" href='https://discord.com/invite/WGqJ2CZebb'>
+          <Link target="_blank" href='https://discord.com/invite/WGqJ2CZebb' className="flex-auto">
             <IconButton text="Discord" color="bg-gradient-to-r from-indigo-500 to-purple-700">
               <FaDiscord size={30} />
             </IconButton>
           </Link>
+        </div>
+       
       </motion.div>
 
       <motion.div

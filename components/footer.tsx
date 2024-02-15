@@ -29,7 +29,7 @@ export default function Footer() {
 
   return (
  
-    <footer className="bg-gradient-to-r from-gray-100 via-[#bce1ff] to-gray-100">
+    <footer className="bg-gradient-to-r from-sky-200 to-gray-300">
 
       <div className="h-[120px] bg-black flex justify-center items-center">
         <div className="relative inline-flex group">

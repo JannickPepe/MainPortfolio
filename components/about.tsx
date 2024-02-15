@@ -62,17 +62,17 @@ export default function About() {
             I have been knowing coding for 7 years of my life now, mainly under education.<br/> In-between my computer science and PBA, I had some time where I took various courses. 
           </p>
           <Content />
-          <hr className="w-52 lg:mb-6 xl:mb-6 h-1 mx-auto bg-gradient-to-r from-indigo-500 to-purple-700 border-0 rounded my-2 dark:bg-gray-700" />
+          <hr className="w-52 lg:mb-8 xl:mb-8 h-1 mx-auto bg-gradient-to-r from-indigo-500 to-purple-700 border-0 rounded my-2 dark:bg-gray-700" />
           <MeteorPreview />
         
           <IoAlertOutline color="#B22222" size={40} className="relative md:ml-7 lg:ml-0 xl:ml-0 top-[2.5rem] lg:top-[3rem] xl:top-[3rem]" />
-          <div className="text-sky-500 dark:text-white px-8 md:ml-10 lg:px-0 lg:ml-10 xl:ml-10 lg:pb-3 xl:px-0 xl:pb-3 text-[20px] lg:text-[36px] xl:text-[36px]">
+          <div className="text-slate-600 dark:text-white px-8 md:ml-10 lg:px-0 lg:ml-10 xl:ml-10 lg:pb-3 xl:px-0 xl:pb-3 text-[20px] lg:text-[36px] xl:text-[36px]">
             <Character paragraph={paragraph} />
           </div>
 
           <Link
             href="#contact"
-            className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 via-green-400 to-purple-700
+            className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 to-purple-700
             dark:bg-gradient-to-bs hover:dark:bg-purple-900 max-w-[400px] mx-auto text-white font-bold 
             mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition text-lg"
             onClick={() => {
