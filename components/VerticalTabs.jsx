@@ -10,7 +10,7 @@ import UdemyWordpress from "../public/WP_Begynder_Certificate.jpg";
 import UdemyWordpressTwo from "../public/WP_Intermediate_Certificate.jpg";
 import UdemyJavascript from "../public/CompleteJS_course.jpg";
 import { IoMdCloseCircle } from "react-icons/io";
-
+import { SiUdemy } from "react-icons/si";
 
 const Tabs = ({ color }) => {
 
@@ -29,7 +29,7 @@ const Tabs = ({ color }) => {
                 </div>
                 <ul className="flex mb-0 flex-wrap pt-3 pb-4 flex-row" role="tablist" >
                     <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                        <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                        <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 1
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
                                 : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
@@ -42,12 +42,13 @@ const Tabs = ({ color }) => {
                             href="#link1"
                             role="tablist"
                         >
-                            ReactJS
+                            
+                            <SiUdemy className="inline-block" size={16}/> ReactJS
                         </a>
                     </li>
 
                     <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
-                        <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                        <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 2
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
                                 : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
@@ -60,12 +61,12 @@ const Tabs = ({ color }) => {
                             href="#link2"
                             role="tablist"
                         >
-                            NextJS
+                            <SiUdemy className="inline-block" size={16}/>  NextJS
                         </a>
                     </li>
 
                     <li className="-mb-px mr-2 last:mr-0 flex-auto text-center md:mt-2 lg:mt-2 xl:mt-0">
-                        <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                        <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 3
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
                                 : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
@@ -78,12 +79,12 @@ const Tabs = ({ color }) => {
                             href="#link3"
                             role="tablist"
                         >
-                            Wordpress
+                            <SiUdemy className="inline-block" size={16}/>  Wordpress
                         </a>
                     </li>
 
                     <li className="-mb-px mr-2 last:mr-0 flex-auto text-center mt-2">
-                        <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
+                        <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 4
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
                                 : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
@@ -96,7 +97,7 @@ const Tabs = ({ color }) => {
                             href="#link3"
                             role="tablist"
                         >
-                            JavaScript
+                            <SiUdemy className="inline-block" size={16}/>  JavaScript
                         </a>
                     </li>
                 </ul>
