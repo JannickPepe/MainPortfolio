@@ -14,6 +14,7 @@ import Content from "./readMore";
 import {MeteorPreview} from "./MeteorsPreview";
 import Character from '@/components/Character';
 
+
 const paragraph = "I am currently looking for a fulltime position as a fullstack developer, app or software deveveloper. With good UI experince and usage of analytic tools"
 
 
@@ -62,7 +63,11 @@ export default function About() {
             I have been knowing coding for 7 years of my life now, mainly under education.<br/> In-between my computer science and PBA, I had some time where I took various courses. 
           </p>
           <Content />
+
+          {/*
           <hr className="w-52 lg:mb-8 xl:mb-8 h-1 mx-auto bg-gradient-to-r from-indigo-500 to-purple-700 border-0 rounded my-2 dark:bg-gray-700" />
+          */ }
+          
           <MeteorPreview />
         
           <IoAlertOutline color="#B22222" size={40} className="relative md:ml-7 lg:ml-0 xl:ml-0 top-[2.5rem] lg:top-[3rem] xl:top-[3rem]" />

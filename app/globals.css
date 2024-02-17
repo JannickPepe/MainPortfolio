@@ -37,8 +37,8 @@ html.dark {
 }
 
 .header-nav{
-  background: rgb(81,156,212);
-  background: linear-gradient(90deg, rgba(81,156,212,1) 55%, rgba(111,90,193,1) 60%);
+  background: rgb(184,229,255);
+  background: linear-gradient(180deg, rgba(184,229,255,1) 20%, rgba(162,193,224,1) 80%);
 }
 
 .quote-icon{

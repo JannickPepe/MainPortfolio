@@ -1,5 +1,6 @@
 
 import React, { useState } from "react";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 
 const ReadMore = ({ children }) => {
@@ -14,9 +15,12 @@ const ReadMore = ({ children }) => {
             {isReadMore ? text.slice(0, 156) : text}
             <div
                 onClick={toggleReadMore}
-                className="read-or-hide mt-1 max-w-[200px] mx-auto text-slate-800 dark:text-white font-semibold focus:outline-none flex justify-center hover:text-white dark:hover:text-slate-300 hover:bg-gradient-to-r from-indigo-500 to-purple-700 hover:rounded-2xl"
+                className="read-or-hide mt-1 max-w-[200px] mx-auto text-slate-800 dark:text-white font-semibold focus:outline-none flex items-center justify-center hover:text-white dark:hover:text-slate-300 hover:bg-gradient-to-r from-indigo-500 to-purple-700 hover:rounded-2xl"
             >
-                {isReadMore ? "Read More" : "Close"}
+                {isReadMore ? "Read More" : "Close"} 
+                <div className="flex items-end justify-end">
+                    <MdOutlineKeyboardArrowRight size={26} /> 
+                </div>
             </div>
         </button>
     );
