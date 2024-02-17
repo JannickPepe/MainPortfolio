@@ -65,13 +65,8 @@ const Tabs = ({ color }) => {
                         </a>
                     </li>
 
-<<<<<<< HEAD
-                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center mt-2">
-                        <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
-=======
                     <li className="-mb-px mr-2 last:mr-0 flex-auto text-center md:mt-2 lg:mt-2 xl:mt-0">
                         <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
->>>>>>> 17293a935460e4ef4622b587b6983ea12fcba64b
                             (openTab === 3
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
                                 : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:hover:text-slate-900 bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
@@ -102,11 +97,7 @@ const Tabs = ({ color }) => {
                             href="#Javascript"
                             role="tablist"
                         >
-<<<<<<< HEAD
-                            Javascript
-=======
                             <SiUdemy className="inline-block" size={16}/>  JavaScript
->>>>>>> 17293a935460e4ef4622b587b6983ea12fcba64b
                         </a>
                     </li>
                 </ul>
