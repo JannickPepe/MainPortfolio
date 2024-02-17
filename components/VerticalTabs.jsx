@@ -32,14 +32,14 @@ const Tabs = ({ color }) => {
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 1
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
-                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
+                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:hover:text-slate-900 bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
                             }
                             onClick={e => {
                             e.preventDefault();
                             setOpenTab(1);
                             }}
                             data-toggle="tab"
-                            href="#link1"
+                            href="#ReactJS"
                             role="tablist"
                         >
                             ReactJS
@@ -50,32 +50,32 @@ const Tabs = ({ color }) => {
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 2
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
-                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
+                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:hover:text-slate-900 bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
                             }
                             onClick={e => {
                             e.preventDefault();
                             setOpenTab(2);
                             }}
                             data-toggle="tab"
-                            href="#link2"
+                            href="#NextJS"
                             role="tablist"
                         >
                             NextJS
                         </a>
                     </li>
 
-                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center md:mt-2 lg:mt-2 xl:mt-0">
+                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center mt-2">
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 3
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
-                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
+                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:hover:text-slate-900 bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
                             }
                             onClick={e => {
                             e.preventDefault();
                             setOpenTab(3);
                             }}
                             data-toggle="tab"
-                            href="#link3"
+                            href="#Wordpress"
                             role="tablist"
                         >
                             Wordpress
@@ -86,17 +86,17 @@ const Tabs = ({ color }) => {
                         <a className={ "text-xs font-bold uppercase px-5 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 4
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
-                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
+                                : "text-slate-700 hover:text-sky-600 bg- dark:text-white dark:hover:text-slate-900 bg-" + color + "-600 dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600")
                             }
                             onClick={e => {
                             e.preventDefault();
                             setOpenTab(4);
                             }}
                             data-toggle="tab"
-                            href="#link3"
+                            href="#Javascript"
                             role="tablist"
                         >
-                            JavaScript
+                            Javascript
                         </a>
                     </li>
                 </ul>
@@ -105,26 +105,26 @@ const Tabs = ({ color }) => {
                     <div className="px-4 py-5 flex-auto">
                         <div className="tab-content tab-space">
 
-                            <div className={openTab === 1 ? "block" : "hidden"} id="link1">
+                            <div className={openTab === 1 ? "block" : "hidden"} id="ReactJS">
                                 <h3 className="text-black mb-1 font-semibold">ReactJS Fullstack</h3>
                                 <Image src={UdemyReact} alt="udemy reactjs" />
                                 <hr className="h-1 my-2 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600 w-full rounded-lg"/>
                                 <Image src={UdemyReactTwo} alt="udemy reactjs" />
                             </div>
 
-                            <div className={openTab === 2 ? "block" : "hidden"} id="link2">
+                            <div className={openTab === 2 ? "block" : "hidden"} id="NextJS">
                                 <h3 className="text-black mb-1 font-semibold">NextJS Fullstacks</h3>
                                 <Image src={UdemyNextJS} alt="udemy nextjs" />
                             </div>
                             
-                            <div className={openTab === 3 ? "block" : "hidden"} id="link3">
+                            <div className={openTab === 3 ? "block" : "hidden"} id="Wordpress">
                                 <h3 className="text-black mb-1 font-semibold">WordPress Courses</h3>
                                 <Image src={UdemyWordpress} alt="udemy Wordpress" />
                                 <hr className="h-1 my-1 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-indigo-600 dark:to-purple-600 w-full rounded-lg"/>    
                                 <Image src={UdemyWordpressTwo} alt="udemy Wordpress" />
                             </div>
 
-                            <div className={openTab === 4 ? "block" : "hidden"} id="link4">
+                            <div className={openTab === 4 ? "block" : "hidden"} id="Javascript">
                                 <h3 className="text-black mb-1 font-semibold">JavaScript Courses</h3>
                                 <Image src={UdemyJavascript} alt="udemy Javascript" />
                             </div>

@@ -26,8 +26,8 @@ const NewEmail = () => {
 					    <textarea placeholder="Message*" className="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
 				    </div>
 				    <div className="my-2 text-center">
-					    <button className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 hover:via-white to-purple-700
-            dark:bg-gradient-to-bs hover:dark:bg-purple-900 text-white font-bold max-w-[400px]
+					    <button className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 to-purple-700
+            dark:bg-gradient-to-bs hover:dark:bg-gradient-to-r dark:hover:from-indigo-400 dark:hover:to-purple-600 text-white font-bold max-w-[400px]
             mt-6 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition text-lg">
                 Send Message
               </button>
@@ -46,7 +46,7 @@ const NewEmail = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-slate-600 dark:text-white">Address</h2>
-                  <p className="text-gray-400">5555 Tailwind RD, Pleasant Grove, UT 73533</p>
+                  <p className="text-gray-400">Demark - Taastrup, 2630</p>
                 </div>
               </div>
               
@@ -56,7 +56,7 @@ const NewEmail = () => {
                 </div>
                 <div className="flex flex-col">
                   <h2 className="text-2xl text-slate-600 dark:text-white">Phone</h2>
-                  <p className="text-gray-400">Tel: xxx-xxx-xxx</p>
+                  <p className="text-gray-400">Tel: +45</p>
                 </div>
               </div>
               
