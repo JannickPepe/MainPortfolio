@@ -119,10 +119,10 @@ export default function Footer() {
               </span> 
               <hr className="flex-grow border-t border-gray-400" /> 
             </div> 
-        <p className="mt-2 text-xs text-gray-800 dark:text-slate-800 font-semibold">
-          © 2023 Jannick Pedersen
+        <p className="mt-2 text-sm text-gray-800 dark:text-slate-800 font-medium">
+          <span className="text-slate-800 font-bold">©</span> 2024 Jannick Pedersen
         </p>
-        <p className="text-xs mt-2 dark:text-slate-800">
+        <p className="text-sm mt-2 dark:text-slate-800 font-medium">
             <span className="font-semibold">About this website:</span> Built with
             React & Next.js (App Router & Server Actions), TypeScript, Tailwind CSS,
             Framer Motion, EmailJS and Vercel hosting.
