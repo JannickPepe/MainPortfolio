@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import SectionHeading from "./section-heading";
@@ -13,12 +13,37 @@ import { GiDiploma } from "react-icons/gi";
 import Content from "./readMore";
 import {MeteorPreview} from "./MeteorsPreview";
 import Character from '@/components/Character';
+import GitData from '@/components/GitStats/GitData'
+import { FaRightLong } from "react-icons/fa6";
+import { MdMouse } from "react-icons/md";
+import { TbHandClick } from "react-icons/tb";
 
 
 const paragraph = "I am currently looking for a fulltime position as a fullstack developer, app or software deveveloper. With good UI experince and usage of analytic tools"
 
+function Panel({title, children, isActive, onShow}) {
+
+  return (
+    <section className="panel">
+      <h3 className="text-2xl font-semibold text-indigo-500">{title}</h3>
+
+      {isActive ? (
+        <p>{children}</p>
+      ) : (
+        <button onClick={onShow} className="bg-purple-500 px-2 py-1 rounded-lg my-2 flex items-center gap-1 mx-auto">
+          Show <TbHandClick />
+        </button>
+      )}
+
+    </section>
+  );
+
+}
+
 
 export default function About() {
+
+  const [activeIndex, setActiveIndex] = useState(0);
 
   const squareVariants = {
     visible: { opacity: 1, scale: 1, transition: { duration: 1 } },
@@ -69,6 +94,29 @@ export default function About() {
           */ }
           
           <MeteorPreview />
+
+          <div className="mt-16">
+            <h2 className="text-3xl font-semibold mb-2"><span className="text-indigo-500">[</span> My <span className="text-purple-500 font-bold">Github</span> Stats <span className="text-purple-500 font-bold">Overview</span> <span className="text-indigo-500">]</span></h2>
+            <Panel
+            title="Link"
+              isActive={activeIndex === 0}
+              onShow={() => setActiveIndex(0)}
+            >
+              <Link className="flex justify-center" href={'https://github.com/JannickPepe'}>
+                <span className="mb-2 border-b border-indigo-600 flex items-center gap-1 text-lg hover:text-purple-500">
+                  Github Account <FaRightLong size={18} />
+                </span>
+              </Link>
+            
+            </Panel>
+            <Panel
+              title="Github Stats"
+              isActive={activeIndex === 1}
+              onShow={() => setActiveIndex(1)}
+            >
+              <GitData />
+            </Panel>
+          </div>
         
           <IoAlertOutline color="#B22222" size={40} className="relative md:ml-7 lg:ml-0 xl:ml-0 top-[2.5rem] lg:top-[3rem] xl:top-[3rem]" />
           <div className="text-slate-600 dark:text-white px-8 md:ml-10 lg:px-0 lg:ml-10 xl:ml-10 lg:pb-3 xl:px-0 xl:pb-3 text-[20px] lg:text-[36px] xl:text-[36px]">
