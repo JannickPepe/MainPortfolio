@@ -11,7 +11,7 @@ import { useActiveSectionContext } from "@/context/active-section-context";
 import { GiDiploma } from "react-icons/gi";
 import Content from "./readMore";
 import {MeteorPreview} from "./MeteorsPreview";
-import Character from '@/components/about/Character';
+import Character from '@/components/About/Character';
 import GitData from '@/components/GitStats/GitData'
 import { FaRightLong } from "react-icons/fa6";
 import { TbHandClick } from "react-icons/tb";
