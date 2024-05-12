@@ -1,11 +1,11 @@
-import About from "@/components/about";
-import Contact from "@/components/contact";
-import Experience from "@/components/experience";
-import Intro from "@/components/intro";
-import Projects from "@/components/projects";
+import About from "@/components/About/about";
+import Contact from "@/components/Contact/contact";
+import Experience from "@/components/Experience/experience";
+import Intro from "@/components/Home/intro";
+import Projects from "@/components/Projects/projects";
 import SectionDivider from "@/components/section-divider";
-import Skills from "@/components/skills";
-import Reviews from "@/components/reviews";
+import Skills from "@/components/Skills/skills";
+import Reviews from "@/components/Reviews/reviews";
 
 export default function Home() {
   return (

@@ -58,8 +58,6 @@ export default function Footer() {
             <p className="max-w-md px-1 mt-4 text-sm text-gray-600 dark:text-slate-800 font-semibold">
             In 2023 summer i graduated from Roskilde Zealand with a Proffesional Bachelor in the area of fullstack programming and app, I have also a Compuer Science diploma from Roksile Zealand<br/>
             I have mainly done fullstack projects for the past 4 years in ReactJS, NextJS and Angular, where before it was PHP and C#/ASP.net<br/>
-            It has both been SQL and NoSQL, depends on the project 
-            Various CSS frameworks experience such as, React-Bootstrap, Bootstrap, Tailwind and Ionic5, but also ShadCN for UI components.
             </p>
           </div>
 

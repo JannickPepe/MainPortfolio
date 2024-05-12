@@ -23,6 +23,6 @@
       "@/*": ["./*"]
     }
   },
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/reviews.jsx", "components/HoverImageLinks.jsx", "components/intro.jsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx", ".next/types/**/*.ts", "components/Reviews/reviews.jsx", "components/HoverImageLinks.jsx", "components/intro.jsx"],
   "exclude": ["node_modules"]
 }

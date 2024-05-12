@@ -2,10 +2,10 @@
 "use client";
 
 import React, { useState } from "react";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
-import sendEmail from "../email/sendEmail";
+import sendEmail from "../../email/sendEmail";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import NewEmail from "./NewEmail";

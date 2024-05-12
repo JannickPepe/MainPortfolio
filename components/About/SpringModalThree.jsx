@@ -1,8 +1,6 @@
 
 import { AnimatePresence, motion } from "framer-motion";
-
 import { useState } from "react";
-
 import { IoMdClose } from "react-icons/io";
 import Image from "next/image";
 import PBA from "@/public/PBA.png";

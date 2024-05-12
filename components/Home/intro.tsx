@@ -9,7 +9,7 @@ import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 
-import IconButton from "./IconButton";
+import IconButton from "../IconButton";
 import { FaGithub } from "react-icons/fa"
 import { FaMeta, FaLinkedin, FaDiscord } from "react-icons/fa6";
 

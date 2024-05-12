@@ -1,23 +1,23 @@
-
-'use client'
+'use client';
 
 import React from "react";
 import Image from "next/image";
-import UdemyReact from "../public/ReactJS_Firebase.jpg";
-import UdemyReactTwo from "../public/PBA_MERN.jpg";
-import UdemyNextJS from "../public/NextJS_Apollo_MongoDB_graphQL.jpg";
-import UdemyWordpress from "../public/WP_Begynder_Certificate.jpg";
-import UdemyWordpressTwo from "../public/WP_Intermediate_Certificate.jpg";
-import UdemyJavascript from "../public/CompleteJS_course.jpg";
 import { IoMdCloseCircle } from "react-icons/io";
 import { SiUdemy } from "react-icons/si";
+import UdemyReact from "../../public/ReactJS_Firebase.jpg";
+import UdemyReactTwo from "../../public/PBA_MERN.jpg";
+import UdemyNextJS from "../../public/NextJS_Apollo_MongoDB_graphQL.jpg";
+import UdemyWordpress from "../../public/WP_Begynder_Certificate.jpg";
+import UdemyWordpressTwo from "../../public/WP_Intermediate_Certificate.jpg";
+import UdemyJavascript from "../../public/CompleteJS_course.jpg";
+
 
 const Tabs = ({ color }) => {
 
     const [openTab, setOpenTab] = React.useState();
 
     return (
-        <div className="flex flex-wrap">
+        <div className="flex items-center justify-center">
             <div className="">
                 <h2 className="text-slate-500 font-bold text-xs inline-block dark:text-slate-800" >More on the way!!</h2>
                 <div className={"text-white cursor-pointer bg-sky-500 hover:bg-red-500 rounded-xl inline-block ml-1 top-1.5 relative"}
@@ -27,8 +27,9 @@ const Tabs = ({ color }) => {
                 > 
                     <IoMdCloseCircle size={21} />
                 </div>
-                <ul className="flex mb-0 flex-wrap pt-3 pb-4 flex-row" role="tablist" >
-                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                <ul className="flex mb-0 flex-wrap pt-3 pb-4 flex-row gap-2" role="tablist" >
+
+                    <li className="text-center">
                         <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 1
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
@@ -47,7 +48,7 @@ const Tabs = ({ color }) => {
                         </a>
                     </li>
 
-                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center">
+                    <li className="text-center">
                         <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 2
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
@@ -65,7 +66,7 @@ const Tabs = ({ color }) => {
                         </a>
                     </li>
 
-                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center mt-2">
+                    <li className="text-center">
                         <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 3
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "
@@ -83,7 +84,7 @@ const Tabs = ({ color }) => {
                         </a>
                     </li>
 
-                    <li className="-mb-px mr-2 last:mr-0 flex-auto text-center mt-2">
+                    <li className="text-center">
                         <a className={ "text-xs font-bold uppercase px-2 py-3 shadow-lg rounded block leading-normal " +
                             (openTab === 4
                                 ? "text-white bg-" + color + "-600 bg-gradient-to-r from-indigo-600 to-[#44BCFF] dark:bg-gradient-to-r dark:from-slate-500 dark:to-slate-800 "

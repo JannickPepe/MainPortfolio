@@ -4,12 +4,12 @@
 import React, { useEffect } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import zan from "@/public/zan.jpg";
 import kellie from "@/public/kellie.jpg";
 import avatar from "@/public/avatar.png";
-import FancyTestimonialsSlider from '@/components/fancy-testimonials-slider';
+import FancyTestimonialsSlider from '@/components/Reviews/fancy-testimonials-slider';
 import OriginalTestimonials from "./oldTestimonials";
 
 

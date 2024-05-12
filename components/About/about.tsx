@@ -3,19 +3,17 @@
 import React, { useEffect, useState } from "react";
 import { useAnimation, motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import SectionHeading from "./section-heading";
+import SectionHeading from "../section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
 import { BsArrowRight } from "react-icons/bs";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import { IoAlertOutline } from "react-icons/io5";
 import { GiDiploma } from "react-icons/gi";
 import Content from "./readMore";
 import {MeteorPreview} from "./MeteorsPreview";
-import Character from '@/components/Character';
+import Character from '@/components/about/Character';
 import GitData from '@/components/GitStats/GitData'
 import { FaRightLong } from "react-icons/fa6";
-import { MdMouse } from "react-icons/md";
 import { TbHandClick } from "react-icons/tb";
 
 
