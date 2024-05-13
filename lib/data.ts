@@ -14,6 +14,14 @@ import avatar from "@/public/avatar.png";
 import linkedinHotel from "@/public/linkedin-hotel.png";
 import linkedinTMS from "@/public/linkedin-tms.png";
 
+import AdventureBook from "@/public/AdventureBook.png";
+import JobList from "@/public/JobList.png";
+import Valyrion from "@/public/Valyrion.png";
+import NanoScience from "@/public/NanoScience.png";
+import FutureScience from "@/public/FutureScience.png";
+import Jphone from "@/public/Jphone.png";
+import SupabaseUploader from "@/public/SupabaseUploader.png";
+import SupabaseSass from "@/public/SupabaseSass.png";
 
 export const links = [
   {
@@ -98,7 +106,23 @@ export const experiencesData = [
   },
 ] as const;
 
-export const projectsData = [
+export const projectsDataFullstack = [
+  {
+    title: "MERN: JobList",
+    description:
+      "An SPA service project, where you can create a user, then either enroll in classes or make classes. Where you can CRUD with title, desc, price ect. Also student can send class request and the teacher can accept and thereafter live chat together with another request it",
+    tags: ["React", "React-Bootstrap", "Firebase Cloudstore & Realtime"],
+    imageUrl: JobList,
+    url_link: "https://joblist.up.railway.app/",
+  },
+  {
+    title: "MERN: Valyrion",
+    description:
+      "An SPA service project, where you can create a user, then either enroll in classes or make classes. Where you can CRUD with title, desc, price ect. Also student can send class request and the teacher can accept and thereafter live chat together with another request it",
+    tags: ["React", "React-Bootstrap", "Firebase Cloudstore & Realtime"],
+    imageUrl: Valyrion,
+    url_link: "https://valyrion.up.railway.app/",
+  },
   {
     title: "Hotel Booking",
     description:
@@ -146,6 +170,68 @@ export const projectsData = [
     tags: ["React", "React-Bootstrap", "Firebase Cloudstore & Realtime"],
     imageUrl: serviceImg,
     url_link: "https://jannickservice.netlify.app/",
+  },
+] as const;
+
+export const projectsDataSPA = [
+  {
+    title: "Nano Scienece",
+    description:
+      "A FullStack Hotel Booking Web App in Next.js 14, React, Typescript, Shadcn, Clerk, My SQL (planetscale), Zustand, Stripe. You can create a user with Clerk if you want to 'rent' a room or add your own hotel and rooms. The date picker cannot overlap a current booked room and the filter list can only show states / ciites if there is any in the selected country. ",
+    tags: ["Next.js", "TailwindCSS", "PlanetScale", "Stripe", "Zustand", "Prisma"],
+    imageUrl: NanoScience,
+    url_link: "https://nanoscience.up.railway.app/",
+  },
+  {
+    title: "Future Science",
+    description:
+      "I worked as a full-stack developer on this startup project for 7 months. Started from designing a Figma Prototype, to build up the NodeJS and Express server with client. Next step was to make sure every page is responsive and setup analytics with GA4 and PostHog, along with EmailJS. Having visualize data as well in the admin panel.",
+    tags: ["React", "React-Bootstrap", "MongoDB", "Express", "Node", "Framer Motion"],
+    imageUrl: FutureScience,
+    url_link: "https://future-science.vercel.app/",
+  },
+  {
+    title: "Adventure Book",
+    description:
+      "A NextJS13 fullstack project, where an e-shop needed to be devevloped after a product owners demand (so far). Where the CSS framework is TailwindCSS with the usage of React-Observer and Framer Motion, also creating the collections in Prisma. Stripe is set in test mode and works.",
+    tags: ["React.js", "TypeScript", "Next.js", "Tailwind", "Prisma", "Stripe"],
+    imageUrl: AdventureBook,
+    url_link: "https://adventure-book.vercel.app/",
+  },
+  {
+    title: "Iphone Clone",
+    description:
+      "A FullStack MERN NextJS14 Threads App with React, Next JS, TypeScript, MongoDB with usage of ShadCN UI with CSS framework Tailwind. It has also server side rendering and MongoDB handling with schemas. Multiple data population, responsive layouts with TailwindCSS, Clerk for authentication, handle file uploads with UploadThing, validate data with Zod and manage forms with react hook form",
+    tags: ["ShadCN", "Next.js", "Typescript", "Clerk", "Zod Validation"],
+    imageUrl: Jphone,
+    url_link: "https://jphone.netlify.app/",
+  },
+] as const;
+
+export const projectsDataSupabase = [
+  {
+    title: "Fullstack SASS Blog",
+    description:
+      "A FullStack Hotel Booking Web App in Next.js 14, React, Typescript, Shadcn, Clerk, My SQL (planetscale), Zustand, Stripe. You can create a user with Clerk if you want to 'rent' a room or add your own hotel and rooms. The date picker cannot overlap a current booked room and the filter list can only show states / ciites if there is any in the selected country. ",
+    tags: ["Next.js", "TailwindCSS", "Supabase", "Stripe", "PostgreSQL", "Framer Motion"],
+    imageUrl: SupabaseSass,
+    url_link: "https://tmsblog.vercel.app/",
+  },
+  {
+    title: "Fullstack Image Upload Storage",
+    description:
+      "I worked as a full-stack developer on this startup project for 7 months. Started from designing a Figma Prototype, to build up the NodeJS and Express server with client. Next step was to make sure every page is responsive and setup analytics with GA4 and PostHog, along with EmailJS. Having visualize data as well in the admin panel.",
+    tags: ["Next.js", "TailwindCSS", "Supabase", "PostgreSQL", "Framer Motion", "Storage Bucket"],
+    imageUrl: SupabaseUploader,
+    url_link: "https://supaimgupload.vercel.app/auth?next=%2F",
+  },
+  {
+    title: "Fullstack Photo Saver",
+    description:
+      "A NextJS13 fullstack project, where an e-shop needed to be devevloped after a product owners demand (so far). Where the CSS framework is TailwindCSS with the usage of React-Observer and Framer Motion, also creating the collections in Prisma. Stripe is set in test mode and works.",
+    tags: ["Next.js", "TailwindCSS", "Supabase", "PostgreSQL", "Framer Motion", "Storage Bucket"],
+    imageUrl: orgoneImg,
+    url_link: "/",
   },
 ] as const;
 

@@ -3,8 +3,10 @@ import { FiChevronDown } from "react-icons/fi";
 import { motion } from "framer-motion";
 import useMeasure from "react-use-measure";
 import Project from "./project";
-import { projectsData } from "@/lib/data";
+import { projectsDataFullstack, projectsDataSPA, projectsDataSupabase } from "@/lib/data";
 import { RepoLinks } from "./RepoLinks";
+import ProjectSPA from "./projectSPA";
+import ProjectSupabase from "./projectSupabase";
 
 
 const ProjectCategory = () => {
@@ -13,9 +15,10 @@ const ProjectCategory = () => {
         <div className="px-4">
             <div className="mx-auto max-w-5xl">
 
-                <Question title="Fullstack JS Frameworks" defaultOpen>
+                {/* defaultOpen */}
+                <Question title="Fullstack JS Frameworks">
                     <div className="">
-                        {projectsData.map((project, index) => (
+                        {projectsDataFullstack.map((project, index) => (
                             <React.Fragment key={index}>
                                 <Project {...project} />
                             </React.Fragment>
@@ -24,19 +27,23 @@ const ProjectCategory = () => {
                 </Question>
 
                 <Question title="SPA">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-                    laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-                    perspiciatis ad vero.
-                </p>
+                    <div className="">
+                        {projectsDataSPA.map((project, index) => (
+                            <React.Fragment key={index}>
+                                <ProjectSPA {...project} />
+                            </React.Fragment>
+                        ))}
+                    </div>
                 </Question>
 
                 <Question title="Fullstack Supabase">
-                <p>
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-                    laboriosam neque reprehenderit saepe eius dolorum vel consequuntur
-                    perspiciatis ad vero.
-                </p>
+                    <div className="">
+                        {projectsDataSupabase.map((project, index) => (
+                            <React.Fragment key={index}>
+                                <ProjectSupabase {...project} />
+                            </React.Fragment>
+                        ))}
+                    </div>
                 </Question>
 
                 <Question title="Links to important Repos">

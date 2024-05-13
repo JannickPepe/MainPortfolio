@@ -1,13 +1,13 @@
 "use client";
 
 import { useRef } from "react";
-import { projectsDataFullstack } from "@/lib/data";
+import { projectsDataSPA } from "@/lib/data";
 import Image from "next/image";
 import { motion, useScroll, useTransform } from "framer-motion";
 
-type ProjectProps = (typeof projectsDataFullstack)[number];
+type ProjectProps = (typeof projectsDataSPA)[number];
 
-export default function Project({title, description, tags, imageUrl, url_link, } : ProjectProps) {
+export default function ProjectSPA({title, description, tags, imageUrl, url_link, } : ProjectProps) {
   
   const ref = useRef<HTMLDivElement>(null);
 
