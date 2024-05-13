@@ -65,7 +65,7 @@ const Question = ({ title, children, defaultOpen = false }) => {
     return (
         <motion.div
         animate={open ? "open" : "closed"}
-        className="border-b-[1px] border-b-slate-300"
+        className="group"
         >
             <button
                 onClick={() => setOpen((pv) => !pv)}
@@ -80,7 +80,7 @@ const Question = ({ title, children, defaultOpen = false }) => {
                     color: "#4f46e5",
                     },
                 }}
-                className="bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-left text-2xl font-medium"
+                className="bg-gradient-to-r from-slate-200 to-slate-300 bg-clip-text text-left text-2xl font-medium group-hover:border-b border-purple-500 transition-transform"
                 >
                 {title}
                 </motion.span>
@@ -96,7 +96,7 @@ const Question = ({ title, children, defaultOpen = false }) => {
                     },
                 }}
                 >
-                <FiChevronDown className="text-2xl" />
+                <FiChevronDown className="text-2xl rounded-full w-7 h-7 shadow-md shadow-indigo-600 dark:shadow-white hover:bg-transparent" />
                 </motion.span>
             </button>
             <motion.div

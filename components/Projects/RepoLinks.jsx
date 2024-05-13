@@ -16,26 +16,26 @@ export const RepoLinks = () => {
                 <Link
                     heading="Angular17"
                     subheading="Basic CRUD REST API"
-                    imgSrc="/imgs/random/6.jpg"
+                    imgSrc="/AngularCRUD.png"
                     href="https://github.com/JannickPepe/Angular17CRUD"
                 />
                 <Link
                     heading="3D Robot Animation"
                     subheading="NextJS, ThreeJS, React-Fibre & Tailwind"
-                    imgSrc="/imgs/random/4.jpg"
+                    imgSrc="/3DRobo.png"
                     href="https://github.com/JannickPepe/React-Fiber-Next.js14-"
                 />
                 <Link
                     heading="3D Donut"
-                    subheading="3D Glass Effect using Three.js and Next.js"
-                    imgSrc="/imgs/random/5.jpg"
+                    subheading="3D Glass Effect using Three.js & Next.js"
+                    imgSrc="/3DDonut.png"
                     href="https://github.com/JannickPepe/NextJS-3D-Donut"
                 />
                 <Link
-                    heading="Laravel API"
-                    subheading="PHP Framework with API to Wordpress Blog"
-                    imgSrc="/imgs/random/10.jpg"
-                    href="https://github.com/JannickPepe/LaravelAPIReactJS"
+                    heading="GSAP Cursor"
+                    subheading="NextJS, GSAP & TailwindCSS"
+                    imgSrc="/GsapCursor.png"
+                    href="https://github.com/JannickPepe/ReactJS-GSAP-Cursor"
                 />
             </div>
         </section>
