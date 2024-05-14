@@ -6,7 +6,6 @@ import { useInView } from "react-intersection-observer";
 import SectionHeading from "../section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
-import { useActiveSectionContext } from "@/context/active-section-context";
 import { GiDiploma } from "react-icons/gi";
 import Content from "./readMore";
 import {MeteorPreview} from "./MeteorsPreview";
