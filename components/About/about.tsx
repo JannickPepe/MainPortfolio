@@ -6,18 +6,16 @@ import { useInView } from "react-intersection-observer";
 import SectionHeading from "../section-heading";
 import { useSectionInView } from "@/lib/hooks";
 import Link from "next/link";
-import { BsArrowRight } from "react-icons/bs";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import { GiDiploma } from "react-icons/gi";
 import Content from "./readMore";
 import {MeteorPreview} from "./MeteorsPreview";
-import Character from '@/components/About/Character';
 import GitData from '@/components/GitStats/GitData'
 import { FaRightLong } from "react-icons/fa6";
 import { TbHandClick } from "react-icons/tb";
 
 
-const paragraph = "I am currently looking for a fulltime position as a fullstack developer, app or software deveveloper. With good UI experince and usage of analytic tools"
+
 
 function Panel({title, children, isActive, onShow} : {title:any, children:any, isActive:boolean, onShow:any }) {
 
@@ -59,9 +57,6 @@ export default function About() {
 
   const { ref } = useSectionInView("About");
 
-  const { setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
-
-  const words = paragraph.split(" ")
 
   return (
     <motion.div 
@@ -86,10 +81,6 @@ export default function About() {
             I have been knowing coding for 7 years of my life now, mainly under education.<br/> In-between my computer science and PBA, I had some time where I took various courses. 
           </p>
           <Content />
-
-          {/*
-          <hr className="w-52 lg:mb-8 xl:mb-8 h-1 mx-auto bg-gradient-to-r from-indigo-500 to-purple-700 border-0 rounded my-2 dark:bg-gray-700" />
-          */ }
           
           <MeteorPreview />
 
@@ -117,26 +108,6 @@ export default function About() {
             </Panel>
           </div>
         
-          <div className="text-slate-600 mt-14 flex justify-center items-center dark:text-white text-[20px] lg:text-[36px] xl:text-[36px] max-w-[800px]">
-            <Character paragraph={paragraph} />
-          </div>
-
-          <Link
-            href="#contact"
-            className="background-animate hover:animate-wiggle bg-gradient-to-r from-indigo-500 to-purple-700
-            dark:bg-gradient-to-bs hover:dark:bg-purple-900 max-w-[400px] mx-auto text-white font-bold 
-            mt-8 px-7 py-3 flex items-center gap-2 rounded-full outline-none active:scale-105 transition text-lg"
-            onClick={() => {
-              setActiveSection("Contact");
-              setTimeOfLastClick(Date.now());
-            }}
-          >
-            <div className="mx-auto focus:scale-110 hover:scale-110">
-              Contact me here{" "}
-              <BsArrowRight size={24} className="group-hover:translate-x-1 transition inline-block" />
-            </div>
-          </Link>
-      
         </section>
       </motion.section>
         

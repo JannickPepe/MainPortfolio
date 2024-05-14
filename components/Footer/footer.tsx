@@ -6,6 +6,7 @@ import Image from "next/image";
 import { BsArrowRight } from "react-icons/bs";
 import  VerticalTabs  from "./VerticalTabs";
 import { motion } from "framer-motion";
+import { GridHoverFooter } from "./GridHoverBtn";
 
 
 const fadeInAnimationVariants = {
@@ -31,19 +32,13 @@ export default function Footer() {
 
     <footer className="bg-gradient-to-r from-sky-200 to-gray-300 dark:bg-gradient-to-r dark:from-indigo-500 dark:to-sky-600">
 
-      <div className="h-[120px] bg-black flex justify-center items-center">
-        <div className="relative inline-flex group">
-          <div className="absolute transitiona-all duration-1000 opacity-70 -inset-px bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] rounded-xl blur-lg group-hover:opacity-100 group-hover:-inset-1 group-hover:duration-200 animate-tilt">
-          </div>
-          <a href="https://jannickportfolio.netlify.app/" title="Go to 3D Portfolio" className="relative inline-flex items-center justify-center px-8 py-4 text-lg font-bold text-white transition-all duration-200 bg-gray-900 font-pj rounded-xl focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900" role="button">
-            3D Portfolio
-            <BsArrowRight size={20} className="opacity-70 group-hover:translate-x-1 transition ml-2" />
-          </a>
-        </div>
+      <div className="relative">
+        <GridHoverFooter />
       </div>
+      
 
-      <div className="px-4 py-10 mx-auto sm:px-6 lg:px-16">
-        <div className="grid grid-cols-1 gap-6 lg:grid-cols-3">
+      <div className="px-4 py-10 mx-auto sm:px-6 lg:px-16 z-50">
+        <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-3">
           <div>
             <div>
               <Image src="https://i.ibb.co/xJmRm7h/jannickogkyle.jpg" width={60} height={60} className="rounded-full inline-block" alt="logo" />

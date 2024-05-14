@@ -92,7 +92,7 @@ const Question = ({ title, children, defaultOpen = false }) => {
                     },
                     closed: {
                     rotate: "0deg",
-                    color: "#7c3aed",
+                    color: "#3A98B9",
                     },
                 }}
                 >
