@@ -7,6 +7,7 @@ import { BsArrowRight } from "react-icons/bs";
 import  VerticalTabs  from "./VerticalTabs";
 import { motion } from "framer-motion";
 import { GridHoverFooter } from "./GridHoverBtn";
+import FooterCV from "./FooterCV";
 
 
 const fadeInAnimationVariants = {
@@ -48,12 +49,13 @@ export default function Footer() {
                     preserveAspectRatio="none">
                     <path d="M0.652466 4.00002C15.8925 2.66668 48.0351 0.400018 54.6853 2.00002" strokeWidth="2"></path>
                 </svg>
-            </span>
+              </span>
             </div>
             <p className="max-w-md px-1 mt-4 text-sm text-gray-600 dark:text-slate-800 font-semibold">
             In 2023 summer i graduated from Roskilde Zealand with a Proffesional Bachelor in the area of fullstack programming and app, I have also a Compuer Science diploma from Roksile Zealand<br/>
             I have mainly done fullstack projects for the past 4 years in ReactJS, NextJS and Angular, where before it was PHP and C#/ASP.net<br/>
             </p>
+            <FooterCV />
           </div>
 
           <div className="grid grid-cols-1 gap-6 lg:col-span-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 lg:ml-6">
@@ -107,7 +109,7 @@ export default function Footer() {
         </div>
         <div className="flex items-center mt-2 lg:mt-6 xl:mt-6 max-w-[440px]"> 
               <hr className="flex-grow border-t border-gray-400" /> 
-              <span className="px-3 text-gray-500 text-sm font-semibold dark:text-slate-700"> 
+              <span className="px-3 text-sm font-semibold dark:text-gray-400"> 
                 Disclaimer & Credit
               </span> 
               <hr className="flex-grow border-t border-gray-400" /> 

@@ -22,6 +22,9 @@ import FutureScience from "@/public/FutureScience.png";
 import Jphone from "@/public/Jphone.png";
 import SupabaseUploader from "@/public/SupabaseUploader.png";
 import SupabaseSass from "@/public/SupabaseSass.png";
+import StartUp from "@/public/StartUp.png";
+import BrandingSite from "@/public/BrandingSite.png";
+
 
 export const links = [
   {
@@ -205,6 +208,22 @@ export const projectsDataSPA = [
     tags: ["ShadCN", "Next.js", "Typescript", "Clerk", "Zod Validation"],
     imageUrl: Jphone,
     url_link: "https://jphone.netlify.app/",
+  },
+  {
+    title: "Start Up Template",
+    description:
+      "A FullStack MERN NextJS14 Threads App with React, Next JS, TypeScript, MongoDB with usage of ShadCN UI with CSS framework Tailwind. It has also server side rendering and MongoDB handling with schemas. Multiple data population, responsive layouts with TailwindCSS, Clerk for authentication, handle file uploads with UploadThing, validate data with Zod and manage forms with react hook form",
+    tags: ["Next.js", "Typescript", "TailwindCSS", "Framer Motion"],
+    imageUrl: StartUp,
+    url_link: "https://start-up-temp.vercel.app/",
+  },
+  {
+    title: "Branding Site Template",
+    description:
+      "A FullStack MERN NextJS14 Threads App with React, Next JS, TypeScript, MongoDB with usage of ShadCN UI with CSS framework Tailwind. It has also server side rendering and MongoDB handling with schemas. Multiple data population, responsive layouts with TailwindCSS, Clerk for authentication, handle file uploads with UploadThing, validate data with Zod and manage forms with react hook form",
+    tags: ["Next.js", "Typescript", "TailwindCSS", "Framer Motion"],
+    imageUrl: BrandingSite,
+    url_link: "https://branding-site.vercel.app/",
   },
 ] as const;
 
