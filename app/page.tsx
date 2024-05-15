@@ -9,6 +9,7 @@ import dynamic from "next/dynamic";
 
 const DynamicHeader = dynamic(() => import("@/components/Reviews/reviews"), {
   ssr: false,
+  loading: () => <p>LOADING...</p>
 });
 
 export default function Home() {
