@@ -27,6 +27,7 @@ export default function FancyTestimonialsSlider({ testimonials }: { testimonials
       setActive(active + 1 === testimonials.length ? 0 : active => active + 1)
     }, autorotateTiming)
     return () => clearInterval(interval)
+  // eslint-disable-next-line 
   }, [active, autorotate])
 
   const heightFix = () => {

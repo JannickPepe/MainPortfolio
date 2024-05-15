@@ -5,9 +5,10 @@ import { motion } from "framer-motion";
 import { FiMenu, } from "react-icons/fi";
 import useMeasure from "react-use-measure";
 import Link from "next/link";
+import clsx from "clsx";
 import { links } from "@/lib/data";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import clsx from "clsx";
+
 
 
 const NavbarNew = () => {
@@ -27,7 +28,7 @@ const GlassNavigation = () => {
     return (
         <nav
         ref={navRef}
-        className="glass-nav fixed left-0 right-0 top-0 z-10 mx-auto max-w-4xl overflow-hidden  bg-gradient-to-br from-white/20 to-white/5 backdrop-blur md:left-6 md:right-6 md:top-6 md:rounded-2xl"
+        className="glass-nav fixed left-0 right-0 top-0 z-10 mx-auto max-w-4xl overflow-hidden bg-gradient-to-br from-white/20 to-white/5 backdrop-blur md:left-6 md:right-6 md:top-6 md:rounded-2xl"
         >
             <div className="glass-nav flex items-center justify-center px-5 py-5">
                 <Links />
@@ -48,7 +49,7 @@ const Links = () => {
 
     return (
 
-        <div className="hidden items-center gap-2 md:flex z-[999]">
+        <div className="hidden items-center gap-2 md:flex z-[999] ">
             <ul className="flex w-[28rem] flex-wrap items-center justify-center gap-y-1 text-[0.9rem] font-medium sm:w-[initial] sm:flex-nowrap sm:gap-5">
                 {links.map((link) => (
                     <motion.li
@@ -97,31 +98,6 @@ const Links = () => {
 
 };
 
-const GlassLink = ({ text }) => {
-
-    return (
-        <a
-        href="#"
-        className="group relative scale-100 overflow-hidden rounded-lg px-4 py-2 transition-transform hover:scale-105 active:scale-95"
-        >
-            <span className="relative z-10 text-white/90 transition-colors group-hover:text-white">
-                {text}
-            </span>
-            <span className="absolute inset-0 z-0 bg-gradient-to-br from-white/20 to-white/5 opacity-0 transition-opacity group-hover:opacity-100" />
-        </a>
-    );
-
-};
-
-const TextLink = ({ text }) => {
-
-    return (
-        <a href="#" className="text-white/90 transition-colors hover:text-white">
-            {text}
-        </a>
-    );
-
-};
 
 const Buttons = ({ setMenuOpen }) => (
 
@@ -135,7 +111,6 @@ const Buttons = ({ setMenuOpen }) => (
     </div>
 
 );
-
 
 
 const MobileMenu = ({ menuOpen }) => {
@@ -154,10 +129,10 @@ const MobileMenu = ({ menuOpen }) => {
         className="block overflow-hidden md:hidden"
         >
             <div ref={refHeight} className="flex items-center px-4 pb-4">
-                <div className="grid grid-cols-4 grid-rows-2 gap-4">
+                <div className="mx-auto space-y-2">
                     {links.map((link) => (
                         <motion.div
-                        className=""
+                        className="border border-slate-800 text-center p-1 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 dark:bg-gradient-to-r dark:from-indigo-500 dark:to-purple-700"
                         key={link.hash}
                         initial={{ y: -100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
