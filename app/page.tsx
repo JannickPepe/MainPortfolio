@@ -5,7 +5,11 @@ import Intro from "@/components/Home/intro";
 import Projects from "@/components/Projects/projects";
 import SectionDivider from "@/components/section-divider";
 import Skills from "@/components/Skills/skills";
-import Reviews from "@/components/Reviews/reviews";
+import dynamic from "next/dynamic";
+
+const DynamicHeader = dynamic(() => import("@/components/Reviews/reviews"), {
+  ssr: false,
+});
 
 export default function Home() {
   return (
@@ -16,7 +20,7 @@ export default function Home() {
       <Projects />
       <Skills />
       <Experience />
-      <Reviews />
+      <DynamicHeader />
       <Contact />
     </main>
   );

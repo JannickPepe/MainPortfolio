@@ -19,15 +19,15 @@ export default function Reviews() {
 
   useEffect(() => {
     const handleResize = () => {
-      setWindowWidth(window.innerWidth);
-    };
-
-    window.addEventListener("resize", handleResize);
-      return () => {
-        window.removeEventListener("resize", handleResize);
+        setWindowWidth(window.innerWidth);
       };
-  }, []);
   
+      window.addEventListener("resize", handleResize);
+        return () => {
+          window.removeEventListener("resize", handleResize);
+        };
+  }, []);
+
 
   const testimonials = [
     {
@@ -46,7 +46,7 @@ export default function Reviews() {
     },
     {
       img: avatar,
-      quote: "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored.",
+      quote: "The functionality to capture responses is a true game-changer. Even if a user becomes fatigued during sign-up and abandons the process, their information remains stored!",
       name: 'Per Jensen',
       role: 'GF/Trekroner',
       github: 'https://github.com/JannickPepe',
