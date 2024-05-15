@@ -23,7 +23,7 @@ export default function CustomCursor() {
         return () => {
             window.removeEventListener('mousemove', moveCursor)
         }
-    }, [])
+    }, [cursorX, cursorY])
 
 
     const hoverVariants = {
