@@ -63,7 +63,7 @@ export default function Footer() {
               <p className="font-medium text-2xl dark:text-slate-950">
                 Sections
               </p>
-              <div className="flex flex-col mt-4 space-y-2 text-gray-500 hover:cursor-pointer text-lg dark:text-slate-700 font-semibold">
+              <div className="flex flex-col mt-4 space-y-2 text-gray-500 hover:cursor-pointer lg:text-lg dark:text-slate-800 lg:font-medium">
                 <a href="#home" className="hover:opacity-75 hover:text-sky-600 hover:dark:text-slate-300">Home</a>
                 <a href="#about" className="hover:opacity-75 hover:text-sky-600 hover:dark:text-slate-300">About</a>
                 <a href="#projects" className="hover:opacity-75 hover:text-sky-600 hover:dark:text-slate-300">Projects</a>
@@ -77,7 +77,7 @@ export default function Footer() {
               <p className="font-medium dark:text-slate-950 text-2xl">
                 Projects
               </p>
-              <div className="flex flex-col mt-4 space-y-2 text-lg text-gray-500 dark:text-slate-700 font-semibold">
+              <div className="flex flex-col mt-4 space-y-2 lg:text-lg text-gray-500 dark:text-slate-800 lg:font-medium">
                 <a href="https://nanoscale.up.railway.app/landing" className="hover:opacity-75 hover:text-sky-600 hover:dark:text-slate-300">NanoScaleSimulations </a>
                 <a href="https://next-js-13-e-shop.vercel.app/" className="hover:opacity-75 hover:text-sky-600 hover:dark:text-slate-300">Orgone Jewels</a>
                 <a href="https://jannick-hotel.vercel.app/" className="hover:opacity-75 hover:text-sky-600 hover:dark:text-slate-300">Hotel Booking</a>

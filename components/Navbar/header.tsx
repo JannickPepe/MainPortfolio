@@ -6,11 +6,10 @@ import { links } from "@/lib/data";
 import Link from "next/link";
 import clsx from "clsx";
 import { useActiveSectionContext } from "@/context/active-section-context";
-import ThemeSwitchNav from "./theme-switch-nav";
+
 
 export default function Header() {
-  const { activeSection, setActiveSection, setTimeOfLastClick } =
-    useActiveSectionContext();
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext();
 
   return (
     <header className="z-[999] relative">
@@ -59,9 +58,6 @@ export default function Header() {
               </Link>
               
                 <div className="bg-gradient-to-r from-sky-500 to-indigo-500 dark:bg-gradient-to-r dark:from-slate-600 dark:to-slate-800 rounded-full absolute inset-0 -z-10 dark:bg-gray-800">
-                  {/* 
-                    <ThemeSwitchNav />
-                  */}
                 </div>
 
             </motion.li>
