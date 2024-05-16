@@ -30,9 +30,14 @@ const GlassNavigation = () => {
         ref={navRef}
         className="glass-nav fixed left-0 right-0 top-0 z-10 mx-auto max-w-4xl overflow-hidden bg-gradient-to-br from-white/20 to-white/5 backdrop-blur md:left-6 md:right-6 md:top-6 md:rounded-2xl"
         >
-            <div className="glass-nav flex items-center justify-center px-5 py-5">
-                <Links />
-                <Buttons setMenuOpen={setMenuOpen} />
+            <div className="glass-nav px-5 py-5">
+                <div className="flex items-center justify-center">
+                    <Links />
+                </div>
+                
+                <div className="flex items-center justify-end">
+                    <Buttons setMenuOpen={setMenuOpen} />
+                </div>
             </div>
 
             <MobileMenu menuOpen={menuOpen} />
@@ -101,7 +106,7 @@ const Links = () => {
 
 const Buttons = ({ setMenuOpen }) => (
 
-    <div className="flex items-center gap-4">
+    <div className="gap-4">
         <button
         onClick={() => setMenuOpen((pv) => !pv)}
         className="ml-2 block scale-100 text-3xl text-white/90 transition-all hover:scale-105 hover:text-white active:scale-95 md:hidden"
@@ -132,7 +137,7 @@ const MobileMenu = ({ menuOpen }) => {
                 <div className="mx-auto space-y-2">
                     {links.map((link) => (
                         <motion.div
-                        className="border border-slate-800 text-center p-1 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 dark:bg-gradient-to-r dark:from-indigo-500 dark:to-purple-700"
+                        className="text-center p-1 rounded-xl bg-gradient-to-r from-sky-500 to-indigo-600 dark:bg-gradient-to-r dark:from-indigo-500 dark:to-purple-700"
                         key={link.hash}
                         initial={{ y: -100, opacity: 0 }}
                         animate={{ y: 0, opacity: 1 }}
