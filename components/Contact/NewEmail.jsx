@@ -2,6 +2,7 @@
 import React from 'react';
 import { FaFacebook, FaGithub, FaLinkedinIn, FaMapMarkerAlt, FaPhone } from "react-icons/fa";
 
+
 const NewEmail = () => {
 
     return (
@@ -124,6 +125,13 @@ const NewEmail = () => {
           </div>
         </div>
       </div>
+
+      {/*
+      <SendVoting />
+      <DisplayVoting />
+      <VotingPoll />
+       */}
+      
     </div>
   );
 

@@ -1,9 +1,7 @@
-
-'use client';
+"use client"
 
 import React from "react";
 import Image from "next/image";
-import { BsArrowRight } from "react-icons/bs";
 import  VerticalTabs  from "./VerticalTabs";
 import { motion } from "framer-motion";
 import { GridHoverFooter } from "./GridHoverBtn";
@@ -37,7 +35,6 @@ export default function Footer() {
       <div className="relative">
         <GridHoverFooter />
       </div>
-      
 
       <div className="px-4 py-10 mx-auto sm:px-6 lg:px-16 z-50">
         <div className="relative grid grid-cols-1 gap-6 lg:grid-cols-3">

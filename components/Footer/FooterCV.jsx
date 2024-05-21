@@ -1,9 +1,8 @@
+"use client";
+
 import { useRef, useState } from "react";
-import { FiLock } from "react-icons/fi";
 import { motion } from "framer-motion";
-import { GrDocumentPdf } from "react-icons/gr";
 import { HiOutlineDocumentArrowDown } from "react-icons/hi2";
-import Link from "next/link";
 
 
 const FooterCV = () => {

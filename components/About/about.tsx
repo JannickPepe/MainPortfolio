@@ -25,8 +25,8 @@ function Panel({title, children, isActive, onShow} : {title:any, children:any, i
       {isActive ? (
         <p>{children}</p>
       ) : (
-        <button onClick={onShow} className="bg-purple-500 px-2 py-1 rounded-lg my-2 flex items-center gap-1 mx-auto">
-          Show <TbHandClick />
+        <button onClick={onShow} className="ring ring-purple-600 px-2 py-1 rounded-lg my-2 flex items-center gap-1 mx-auto hover:ring-transparent hover:scale-105 group">
+          Show <TbHandClick className="group-hover:animate-wiggle" />
         </button>
       )}
 
