@@ -24,6 +24,7 @@ import SupabaseUploader from "@/public/SupabaseUploader.png";
 import SupabaseSass from "@/public/SupabaseSass.png";
 import StartUp from "@/public/StartUp.png";
 import BrandingSite from "@/public/BrandingSite.png";
+import JSBranding from "@/public/JSBrand.png";
 
 
 export const links = [
@@ -194,12 +195,12 @@ export const projectsDataSPA = [
     url_link: "https://future-science.vercel.app/",
   },
   {
-    title: "Adventure Book",
+    title: "Aceternity UI with Sentry",
     description:
-      "A NextJS13 fullstack project, where an e-shop needed to be devevloped after a product owners demand (so far). Where the CSS framework is TailwindCSS with the usage of React-Observer and Framer Motion, also creating the collections in Prisma. Stripe is set in test mode and works.",
-    tags: ["React.js", "TypeScript", "Next.js", "Tailwind", "Prisma", "Stripe"],
-    imageUrl: AdventureBook,
-    url_link: "https://adventure-book.vercel.app/",
+      "I worked as a full-stack developer on this startup project for 7 months. Started from designing a Figma Prototype, to build up the NodeJS and Express server with client. Next step was to make sure every page is responsive and setup analytics with GA4 and PostHog, along with EmailJS. Having visualize data as well in the admin panel.",
+    tags: ["NextJS", "TailwindCSS", "Aceeternity", "ThreeJS", "Framer Motion"],
+    imageUrl: JSBranding,
+    url_link: "https://js-brand.vercel.app/",
   },
   {
     title: "Iphone Clone",
@@ -224,6 +225,14 @@ export const projectsDataSPA = [
     tags: ["Next.js", "Typescript", "TailwindCSS", "Framer Motion"],
     imageUrl: BrandingSite,
     url_link: "https://branding-site.vercel.app/",
+  },
+  {
+    title: "Adventure Book",
+    description:
+      "A NextJS13 fullstack project, where an e-shop needed to be devevloped after a product owners demand (so far). Where the CSS framework is TailwindCSS with the usage of React-Observer and Framer Motion, also creating the collections in Prisma. Stripe is set in test mode and works.",
+    tags: ["React.js", "TypeScript", "Next.js", "Tailwind", "Prisma", "Stripe"],
+    imageUrl: AdventureBook,
+    url_link: "https://adventure-book.vercel.app/",
   },
 ] as const;
 
