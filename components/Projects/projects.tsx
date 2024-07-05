@@ -19,14 +19,6 @@ export default function Projects() {
 
       <SectionHeading>My projects</SectionHeading>
       <ProjectCategory />
-
-      <div className="hidden md:block">
-        <div className="text-slate-600 mt-14 flex justify-center items-center dark:text-white text-[20px] lg:text-[36px] xl:text-[36px] max-w-[800px]">
-          <Character paragraph={paragraph} />
-        </div>
-
-        <WetPaintBtn />
-      </div>
       
     </section>
   );
